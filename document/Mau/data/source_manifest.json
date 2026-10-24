@@ -1,0 +1,11 @@
+{
+  "model": "PHENIKAA-A4-OPEN-GROUND-20261024",
+  "version": "2.1.0",
+  "benchmark": "outputs/a4_open_ground/benchmark",
+  "rows": 16,
+  "nodes": 162,
+  "edges": 257,
+  "rooms": 27,
+  "population": 1360,
+  "ground_floor_population": 180
+}

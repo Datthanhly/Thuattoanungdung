@@ -1,0 +1,5015 @@
+{
+  "building_id": "PHENIKAA-A4-OPEN-GROUND-20261024",
+  "nodes": [
+    {
+      "id": "L1_1",
+      "floor": 1,
+      "x": 3.6,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S1_1",
+      "floor": 1,
+      "x": 3.6,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "EXIT1",
+      "floor": 1,
+      "x": 3.6,
+      "y": 9.8,
+      "kind": "EXIT",
+      "storage_capacity": 1360,
+      "can_wait": false,
+      "exit_capacity": 1360
+    },
+    {
+      "id": "R104-105",
+      "floor": 1,
+      "x": 16.4,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D104-105_1",
+      "floor": 1,
+      "x": 10.879999999999999,
+      "y": 8.8,
+      "kind": "EXIT",
+      "storage_capacity": 7,
+      "can_wait": false,
+      "exit_capacity": 7
+    },
+    {
+      "id": "D104-105_2",
+      "floor": 1,
+      "x": 21.919999999999998,
+      "y": 8.8,
+      "kind": "EXIT",
+      "storage_capacity": 7,
+      "can_wait": false,
+      "exit_capacity": 7
+    },
+    {
+      "id": "R103",
+      "floor": 1,
+      "x": 32.4,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D103_1",
+      "floor": 1,
+      "x": 28.319999999999997,
+      "y": 8.8,
+      "kind": "EXIT",
+      "storage_capacity": 7,
+      "can_wait": false,
+      "exit_capacity": 7
+    },
+    {
+      "id": "D103_2",
+      "floor": 1,
+      "x": 36.48,
+      "y": 8.8,
+      "kind": "EXIT",
+      "storage_capacity": 7,
+      "can_wait": false,
+      "exit_capacity": 7
+    },
+    {
+      "id": "L1_2",
+      "floor": 1,
+      "x": 45.99999999999999,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S1_2",
+      "floor": 1,
+      "x": 45.99999999999999,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "EXIT2",
+      "floor": 1,
+      "x": 45.99999999999999,
+      "y": 9.8,
+      "kind": "EXIT",
+      "storage_capacity": 1360,
+      "can_wait": false,
+      "exit_capacity": 1360
+    },
+    {
+      "id": "R102",
+      "floor": 1,
+      "x": 57.199999999999996,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D102_1",
+      "floor": 1,
+      "x": 54.559999999999995,
+      "y": 8.8,
+      "kind": "EXIT",
+      "storage_capacity": 7,
+      "can_wait": false,
+      "exit_capacity": 7
+    },
+    {
+      "id": "D102_2",
+      "floor": 1,
+      "x": 59.839999999999996,
+      "y": 8.8,
+      "kind": "EXIT",
+      "storage_capacity": 7,
+      "can_wait": false,
+      "exit_capacity": 7
+    },
+    {
+      "id": "R101",
+      "floor": 1,
+      "x": 63.99999999999999,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 20,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D101_1",
+      "floor": 1,
+      "x": 63.99999999999999,
+      "y": 8.8,
+      "kind": "EXIT",
+      "storage_capacity": 7,
+      "can_wait": false,
+      "exit_capacity": 7
+    },
+    {
+      "id": "L2_1",
+      "floor": 2,
+      "x": 3.6,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S2_1",
+      "floor": 2,
+      "x": 3.6,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_00",
+      "floor": 2,
+      "x": 3.6,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R205",
+      "floor": 2,
+      "x": 13.2,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D205_1",
+      "floor": 2,
+      "x": 9.600000000000001,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_01",
+      "floor": 2,
+      "x": 9.600000000000001,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D205_2",
+      "floor": 2,
+      "x": 16.8,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_02",
+      "floor": 2,
+      "x": 16.8,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R204",
+      "floor": 2,
+      "x": 21.599999999999998,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 20,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D204_1",
+      "floor": 2,
+      "x": 21.599999999999998,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_03",
+      "floor": 2,
+      "x": 21.599999999999998,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R203",
+      "floor": 2,
+      "x": 30.8,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D203_1",
+      "floor": 2,
+      "x": 26.72,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_04",
+      "floor": 2,
+      "x": 26.72,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D203_2",
+      "floor": 2,
+      "x": 34.88,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_05",
+      "floor": 2,
+      "x": 34.88,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L2_2",
+      "floor": 2,
+      "x": 44.4,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S2_2",
+      "floor": 2,
+      "x": 44.4,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_06",
+      "floor": 2,
+      "x": 44.4,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R201-202",
+      "floor": 2,
+      "x": 60.400000000000006,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D201-202_1",
+      "floor": 2,
+      "x": 54.88,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_07",
+      "floor": 2,
+      "x": 54.88,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D201-202_2",
+      "floor": 2,
+      "x": 65.92,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C2_08",
+      "floor": 2,
+      "x": 65.92,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L3_1",
+      "floor": 3,
+      "x": 3.6,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S3_1",
+      "floor": 3,
+      "x": 3.6,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_00",
+      "floor": 3,
+      "x": 3.6,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R305",
+      "floor": 3,
+      "x": 13.2,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D305_1",
+      "floor": 3,
+      "x": 9.600000000000001,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_01",
+      "floor": 3,
+      "x": 9.600000000000001,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D305_2",
+      "floor": 3,
+      "x": 16.8,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_02",
+      "floor": 3,
+      "x": 16.8,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R304",
+      "floor": 3,
+      "x": 23.6,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D304_1",
+      "floor": 3,
+      "x": 20.96,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_03",
+      "floor": 3,
+      "x": 20.96,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D304_2",
+      "floor": 3,
+      "x": 26.240000000000002,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_04",
+      "floor": 3,
+      "x": 26.240000000000002,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R303",
+      "floor": 3,
+      "x": 32.8,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D303_1",
+      "floor": 3,
+      "x": 29.92,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_05",
+      "floor": 3,
+      "x": 29.92,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D303_2",
+      "floor": 3,
+      "x": 35.68,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_06",
+      "floor": 3,
+      "x": 35.68,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L3_2",
+      "floor": 3,
+      "x": 44.4,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S3_2",
+      "floor": 3,
+      "x": 44.4,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_07",
+      "floor": 3,
+      "x": 44.4,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R301-302",
+      "floor": 3,
+      "x": 60.400000000000006,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D301-302_1",
+      "floor": 3,
+      "x": 54.88,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_08",
+      "floor": 3,
+      "x": 54.88,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D301-302_2",
+      "floor": 3,
+      "x": 65.92,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C3_09",
+      "floor": 3,
+      "x": 65.92,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L4_1",
+      "floor": 4,
+      "x": 3.6,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S4_1",
+      "floor": 4,
+      "x": 3.6,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_00",
+      "floor": 4,
+      "x": 3.6,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R405",
+      "floor": 4,
+      "x": 12.8,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D405_1",
+      "floor": 4,
+      "x": 9.44,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_01",
+      "floor": 4,
+      "x": 9.44,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D405_2",
+      "floor": 4,
+      "x": 16.16,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_02",
+      "floor": 4,
+      "x": 16.16,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R404",
+      "floor": 4,
+      "x": 23.2,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D404_1",
+      "floor": 4,
+      "x": 20.32,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_03",
+      "floor": 4,
+      "x": 20.32,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D404_2",
+      "floor": 4,
+      "x": 26.08,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_04",
+      "floor": 4,
+      "x": 26.08,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R403",
+      "floor": 4,
+      "x": 32.8,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D403_1",
+      "floor": 4,
+      "x": 29.92,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_05",
+      "floor": 4,
+      "x": 29.92,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D403_2",
+      "floor": 4,
+      "x": 35.68,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_06",
+      "floor": 4,
+      "x": 35.68,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L4_2",
+      "floor": 4,
+      "x": 44.4,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S4_2",
+      "floor": 4,
+      "x": 44.4,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_07",
+      "floor": 4,
+      "x": 44.4,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R401-402",
+      "floor": 4,
+      "x": 60.0,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D401-402_1",
+      "floor": 4,
+      "x": 54.720000000000006,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_08",
+      "floor": 4,
+      "x": 54.720000000000006,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D401-402_2",
+      "floor": 4,
+      "x": 65.28,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C4_09",
+      "floor": 4,
+      "x": 65.28,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L5_1",
+      "floor": 5,
+      "x": 3.6,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S5_1",
+      "floor": 5,
+      "x": 3.6,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_00",
+      "floor": 5,
+      "x": 3.6,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R505",
+      "floor": 5,
+      "x": 12.8,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D505_1",
+      "floor": 5,
+      "x": 9.44,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_01",
+      "floor": 5,
+      "x": 9.44,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D505_2",
+      "floor": 5,
+      "x": 16.16,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_02",
+      "floor": 5,
+      "x": 16.16,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R504",
+      "floor": 5,
+      "x": 22.799999999999997,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D504_1",
+      "floor": 5,
+      "x": 20.16,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_03",
+      "floor": 5,
+      "x": 20.16,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D504_2",
+      "floor": 5,
+      "x": 25.439999999999998,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_04",
+      "floor": 5,
+      "x": 25.439999999999998,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R503",
+      "floor": 5,
+      "x": 32.4,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D503_1",
+      "floor": 5,
+      "x": 29.28,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_05",
+      "floor": 5,
+      "x": 29.28,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D503_2",
+      "floor": 5,
+      "x": 35.519999999999996,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_06",
+      "floor": 5,
+      "x": 35.519999999999996,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L5_2",
+      "floor": 5,
+      "x": 44.4,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S5_2",
+      "floor": 5,
+      "x": 44.4,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_07",
+      "floor": 5,
+      "x": 44.4,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R501-502",
+      "floor": 5,
+      "x": 58.2,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D501-502_1",
+      "floor": 5,
+      "x": 54.0,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_08",
+      "floor": 5,
+      "x": 54.0,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D501-502_2",
+      "floor": 5,
+      "x": 62.400000000000006,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C5_09",
+      "floor": 5,
+      "x": 62.400000000000006,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L6_1",
+      "floor": 6,
+      "x": 3.6,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S6_1",
+      "floor": 6,
+      "x": 3.6,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C6_00",
+      "floor": 6,
+      "x": 3.6,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R606-607-608",
+      "floor": 6,
+      "x": 15.600000000000001,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D606-607-608_1",
+      "floor": 6,
+      "x": 10.56,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C6_01",
+      "floor": 6,
+      "x": 10.56,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D606-607-608_2",
+      "floor": 6,
+      "x": 20.64,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C6_02",
+      "floor": 6,
+      "x": 20.64,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R603-604-605",
+      "floor": 6,
+      "x": 30.8,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D603-604-605_1",
+      "floor": 6,
+      "x": 26.72,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C6_03",
+      "floor": 6,
+      "x": 26.72,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D603-604-605_2",
+      "floor": 6,
+      "x": 34.88,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C6_04",
+      "floor": 6,
+      "x": 34.88,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L6_2",
+      "floor": 6,
+      "x": 44.4,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S6_2",
+      "floor": 6,
+      "x": 44.4,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C6_05",
+      "floor": 6,
+      "x": 44.4,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R601-602",
+      "floor": 6,
+      "x": 56.0,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D601-602_1",
+      "floor": 6,
+      "x": 53.120000000000005,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C6_06",
+      "floor": 6,
+      "x": 53.120000000000005,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D601-602_2",
+      "floor": 6,
+      "x": 58.88,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C6_07",
+      "floor": 6,
+      "x": 58.88,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L7_1",
+      "floor": 7,
+      "x": 3.6,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S7_1",
+      "floor": 7,
+      "x": 3.6,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C7_00",
+      "floor": 7,
+      "x": 3.6,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R705",
+      "floor": 7,
+      "x": 12.0,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 40,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D705_1",
+      "floor": 7,
+      "x": 9.120000000000001,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C7_01",
+      "floor": 7,
+      "x": 9.120000000000001,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D705_2",
+      "floor": 7,
+      "x": 14.879999999999999,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C7_02",
+      "floor": 7,
+      "x": 14.879999999999999,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R704",
+      "floor": 7,
+      "x": 18.8,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 20,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D704_1",
+      "floor": 7,
+      "x": 18.8,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C7_03",
+      "floor": 7,
+      "x": 18.8,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R702-703",
+      "floor": 7,
+      "x": 27.6,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 80,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D702-703_1",
+      "floor": 7,
+      "x": 23.52,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C7_04",
+      "floor": 7,
+      "x": 23.52,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D702-703_2",
+      "floor": 7,
+      "x": 31.68,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C7_05",
+      "floor": 7,
+      "x": 31.68,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "L7_2",
+      "floor": 7,
+      "x": 41.199999999999996,
+      "y": 7.5,
+      "kind": "LOBBY",
+      "storage_capacity": 30,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "S7_2",
+      "floor": 7,
+      "x": 41.199999999999996,
+      "y": 4.4,
+      "kind": "STAIR",
+      "storage_capacity": 36,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C7_06",
+      "floor": 7,
+      "x": 41.199999999999996,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "R701",
+      "floor": 7,
+      "x": 50.0,
+      "y": 4.4,
+      "kind": "ROOM",
+      "storage_capacity": 20,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "D701_1",
+      "floor": 7,
+      "x": 50.0,
+      "y": 8.8,
+      "kind": "DOOR",
+      "storage_capacity": 7,
+      "can_wait": true,
+      "exit_capacity": 0
+    },
+    {
+      "id": "C7_07",
+      "floor": 7,
+      "x": 50.0,
+      "y": 9.8,
+      "kind": "CORRIDOR",
+      "storage_capacity": 24,
+      "can_wait": true,
+      "exit_capacity": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "L1_1__EXIT1",
+      "source": "L1_1",
+      "target": "EXIT1",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L1_1__S1_1",
+      "source": "L1_1",
+      "target": "S1_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S1_1__L1_1",
+      "source": "S1_1",
+      "target": "L1_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R104-105__D104-105_1",
+      "source": "R104-105",
+      "target": "D104-105_1",
+      "length_m": 7.05906509390585,
+      "travel_seconds": 5.8825542449215416,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "R104-105__D104-105_2",
+      "source": "R104-105",
+      "target": "D104-105_2",
+      "length_m": 7.05906509390585,
+      "travel_seconds": 5.8825542449215416,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "R103__D103_1",
+      "source": "R103",
+      "target": "D103_1",
+      "length_m": 6.000533309631738,
+      "travel_seconds": 5.000444424693115,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "R103__D103_2",
+      "source": "R103",
+      "target": "D103_2",
+      "length_m": 6.000533309631735,
+      "travel_seconds": 5.000444424693113,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "L1_2__EXIT2",
+      "source": "L1_2",
+      "target": "EXIT2",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L1_2__S1_2",
+      "source": "L1_2",
+      "target": "S1_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S1_2__L1_2",
+      "source": "S1_2",
+      "target": "L1_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R102__D102_1",
+      "source": "R102",
+      "target": "D102_1",
+      "length_m": 5.131237667463865,
+      "travel_seconds": 4.276031389553221,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "R102__D102_2",
+      "source": "R102",
+      "target": "D102_2",
+      "length_m": 5.131237667463865,
+      "travel_seconds": 4.276031389553221,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "R101__D101_1",
+      "source": "R101",
+      "target": "D101_1",
+      "length_m": 4.4,
+      "travel_seconds": 3.666666666666667,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "C2_00__L2_1",
+      "source": "C2_00",
+      "target": "L2_1",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L2_1__C2_00",
+      "source": "L2_1",
+      "target": "C2_00",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L2_1__S2_1",
+      "source": "L2_1",
+      "target": "S2_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S2_1__L2_1",
+      "source": "S2_1",
+      "target": "L2_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R205__D205_1",
+      "source": "R205",
+      "target": "D205_1",
+      "length_m": 5.685068161420757,
+      "travel_seconds": 4.737556801183964,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D205_1__C2_01",
+      "source": "D205_1",
+      "target": "C2_01",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R205__D205_2",
+      "source": "R205",
+      "target": "D205_2",
+      "length_m": 5.68506816142076,
+      "travel_seconds": 4.737556801183967,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D205_2__C2_02",
+      "source": "D205_2",
+      "target": "C2_02",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R204__D204_1",
+      "source": "R204",
+      "target": "D204_1",
+      "length_m": 4.4,
+      "travel_seconds": 3.666666666666667,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D204_1__C2_03",
+      "source": "D204_1",
+      "target": "C2_03",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R203__D203_1",
+      "source": "R203",
+      "target": "D203_1",
+      "length_m": 6.000533309631738,
+      "travel_seconds": 5.000444424693115,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D203_1__C2_04",
+      "source": "D203_1",
+      "target": "C2_04",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R203__D203_2",
+      "source": "R203",
+      "target": "D203_2",
+      "length_m": 6.000533309631738,
+      "travel_seconds": 5.000444424693115,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D203_2__C2_05",
+      "source": "D203_2",
+      "target": "C2_05",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C2_06__L2_2",
+      "source": "C2_06",
+      "target": "L2_2",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L2_2__C2_06",
+      "source": "L2_2",
+      "target": "C2_06",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L2_2__S2_2",
+      "source": "L2_2",
+      "target": "S2_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S2_2__L2_2",
+      "source": "S2_2",
+      "target": "L2_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R201-202__D201-202_1",
+      "source": "R201-202",
+      "target": "D201-202_1",
+      "length_m": 7.059065093905852,
+      "travel_seconds": 5.882554244921544,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D201-202_1__C2_07",
+      "source": "D201-202_1",
+      "target": "C2_07",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R201-202__D201-202_2",
+      "source": "R201-202",
+      "target": "D201-202_2",
+      "length_m": 7.059065093905847,
+      "travel_seconds": 5.88255424492154,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D201-202_2__C2_08",
+      "source": "D201-202_2",
+      "target": "C2_08",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C2_00__C2_01",
+      "source": "C2_00",
+      "target": "C2_01",
+      "length_m": 6.000000000000002,
+      "travel_seconds": 5.000000000000002,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_01__C2_00",
+      "source": "C2_01",
+      "target": "C2_00",
+      "length_m": 6.000000000000002,
+      "travel_seconds": 5.000000000000002,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_01__C2_02",
+      "source": "C2_01",
+      "target": "C2_02",
+      "length_m": 7.199999999999999,
+      "travel_seconds": 6.0,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_02__C2_01",
+      "source": "C2_02",
+      "target": "C2_01",
+      "length_m": 7.199999999999999,
+      "travel_seconds": 6.0,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_02__C2_03",
+      "source": "C2_02",
+      "target": "C2_03",
+      "length_m": 4.799999999999997,
+      "travel_seconds": 3.999999999999998,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_03__C2_02",
+      "source": "C2_03",
+      "target": "C2_02",
+      "length_m": 4.799999999999997,
+      "travel_seconds": 3.999999999999998,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_03__C2_04",
+      "source": "C2_03",
+      "target": "C2_04",
+      "length_m": 5.120000000000001,
+      "travel_seconds": 4.2666666666666675,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_04__C2_03",
+      "source": "C2_04",
+      "target": "C2_03",
+      "length_m": 5.120000000000001,
+      "travel_seconds": 4.2666666666666675,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_04__C2_05",
+      "source": "C2_04",
+      "target": "C2_05",
+      "length_m": 8.160000000000004,
+      "travel_seconds": 6.800000000000003,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_05__C2_04",
+      "source": "C2_05",
+      "target": "C2_04",
+      "length_m": 8.160000000000004,
+      "travel_seconds": 6.800000000000003,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_05__C2_06",
+      "source": "C2_05",
+      "target": "C2_06",
+      "length_m": 9.519999999999996,
+      "travel_seconds": 7.93333333333333,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_06__C2_05",
+      "source": "C2_06",
+      "target": "C2_05",
+      "length_m": 9.519999999999996,
+      "travel_seconds": 7.93333333333333,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_06__C2_07",
+      "source": "C2_06",
+      "target": "C2_07",
+      "length_m": 10.480000000000004,
+      "travel_seconds": 8.733333333333338,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_07__C2_06",
+      "source": "C2_07",
+      "target": "C2_06",
+      "length_m": 10.480000000000004,
+      "travel_seconds": 8.733333333333338,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_07__C2_08",
+      "source": "C2_07",
+      "target": "C2_08",
+      "length_m": 11.04,
+      "travel_seconds": 9.2,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C2_08__C2_07",
+      "source": "C2_08",
+      "target": "C2_07",
+      "length_m": 11.04,
+      "travel_seconds": 9.2,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_00__L3_1",
+      "source": "C3_00",
+      "target": "L3_1",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L3_1__C3_00",
+      "source": "L3_1",
+      "target": "C3_00",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L3_1__S3_1",
+      "source": "L3_1",
+      "target": "S3_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S3_1__L3_1",
+      "source": "S3_1",
+      "target": "L3_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R305__D305_1",
+      "source": "R305",
+      "target": "D305_1",
+      "length_m": 5.685068161420757,
+      "travel_seconds": 4.737556801183964,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D305_1__C3_01",
+      "source": "D305_1",
+      "target": "C3_01",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R305__D305_2",
+      "source": "R305",
+      "target": "D305_2",
+      "length_m": 5.68506816142076,
+      "travel_seconds": 4.737556801183967,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D305_2__C3_02",
+      "source": "D305_2",
+      "target": "C3_02",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R304__D304_1",
+      "source": "R304",
+      "target": "D304_1",
+      "length_m": 5.131237667463865,
+      "travel_seconds": 4.276031389553221,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D304_1__C3_03",
+      "source": "D304_1",
+      "target": "C3_03",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R304__D304_2",
+      "source": "R304",
+      "target": "D304_2",
+      "length_m": 5.131237667463865,
+      "travel_seconds": 4.276031389553221,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D304_2__C3_04",
+      "source": "D304_2",
+      "target": "C3_04",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R303__D303_1",
+      "source": "R303",
+      "target": "D303_1",
+      "length_m": 5.258745097454333,
+      "travel_seconds": 4.382287581211944,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D303_1__C3_05",
+      "source": "D303_1",
+      "target": "C3_05",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R303__D303_2",
+      "source": "R303",
+      "target": "D303_2",
+      "length_m": 5.258745097454336,
+      "travel_seconds": 4.382287581211947,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D303_2__C3_06",
+      "source": "D303_2",
+      "target": "C3_06",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C3_07__L3_2",
+      "source": "C3_07",
+      "target": "L3_2",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L3_2__C3_07",
+      "source": "L3_2",
+      "target": "C3_07",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L3_2__S3_2",
+      "source": "L3_2",
+      "target": "S3_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S3_2__L3_2",
+      "source": "S3_2",
+      "target": "L3_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R301-302__D301-302_1",
+      "source": "R301-302",
+      "target": "D301-302_1",
+      "length_m": 7.059065093905852,
+      "travel_seconds": 5.882554244921544,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D301-302_1__C3_08",
+      "source": "D301-302_1",
+      "target": "C3_08",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R301-302__D301-302_2",
+      "source": "R301-302",
+      "target": "D301-302_2",
+      "length_m": 7.059065093905847,
+      "travel_seconds": 5.88255424492154,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D301-302_2__C3_09",
+      "source": "D301-302_2",
+      "target": "C3_09",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C3_00__C3_01",
+      "source": "C3_00",
+      "target": "C3_01",
+      "length_m": 6.000000000000002,
+      "travel_seconds": 5.000000000000002,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_01__C3_00",
+      "source": "C3_01",
+      "target": "C3_00",
+      "length_m": 6.000000000000002,
+      "travel_seconds": 5.000000000000002,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_01__C3_02",
+      "source": "C3_01",
+      "target": "C3_02",
+      "length_m": 7.199999999999999,
+      "travel_seconds": 6.0,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_02__C3_01",
+      "source": "C3_02",
+      "target": "C3_01",
+      "length_m": 7.199999999999999,
+      "travel_seconds": 6.0,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_02__C3_03",
+      "source": "C3_02",
+      "target": "C3_03",
+      "length_m": 4.16,
+      "travel_seconds": 3.466666666666667,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_03__C3_02",
+      "source": "C3_03",
+      "target": "C3_02",
+      "length_m": 4.16,
+      "travel_seconds": 3.466666666666667,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_03__C3_04",
+      "source": "C3_03",
+      "target": "C3_04",
+      "length_m": 5.280000000000001,
+      "travel_seconds": 4.400000000000001,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_04__C3_03",
+      "source": "C3_04",
+      "target": "C3_03",
+      "length_m": 5.280000000000001,
+      "travel_seconds": 4.400000000000001,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_04__C3_05",
+      "source": "C3_04",
+      "target": "C3_05",
+      "length_m": 3.6799999999999997,
+      "travel_seconds": 3.0666666666666664,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_05__C3_04",
+      "source": "C3_05",
+      "target": "C3_04",
+      "length_m": 3.6799999999999997,
+      "travel_seconds": 3.0666666666666664,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_05__C3_06",
+      "source": "C3_05",
+      "target": "C3_06",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_06__C3_05",
+      "source": "C3_06",
+      "target": "C3_05",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_06__C3_07",
+      "source": "C3_06",
+      "target": "C3_07",
+      "length_m": 8.719999999999999,
+      "travel_seconds": 7.266666666666666,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_07__C3_06",
+      "source": "C3_07",
+      "target": "C3_06",
+      "length_m": 8.719999999999999,
+      "travel_seconds": 7.266666666666666,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_07__C3_08",
+      "source": "C3_07",
+      "target": "C3_08",
+      "length_m": 10.480000000000004,
+      "travel_seconds": 8.733333333333338,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_08__C3_07",
+      "source": "C3_08",
+      "target": "C3_07",
+      "length_m": 10.480000000000004,
+      "travel_seconds": 8.733333333333338,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_08__C3_09",
+      "source": "C3_08",
+      "target": "C3_09",
+      "length_m": 11.04,
+      "travel_seconds": 9.2,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C3_09__C3_08",
+      "source": "C3_09",
+      "target": "C3_08",
+      "length_m": 11.04,
+      "travel_seconds": 9.2,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_00__L4_1",
+      "source": "C4_00",
+      "target": "L4_1",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L4_1__C4_00",
+      "source": "L4_1",
+      "target": "C4_00",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L4_1__S4_1",
+      "source": "L4_1",
+      "target": "S4_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S4_1__L4_1",
+      "source": "S4_1",
+      "target": "L4_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R405__D405_1",
+      "source": "R405",
+      "target": "D405_1",
+      "length_m": 5.536208088574707,
+      "travel_seconds": 4.613506740478923,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D405_1__C4_01",
+      "source": "D405_1",
+      "target": "C4_01",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R405__D405_2",
+      "source": "R405",
+      "target": "D405_2",
+      "length_m": 5.536208088574706,
+      "travel_seconds": 4.613506740478922,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D405_2__C4_02",
+      "source": "D405_2",
+      "target": "C4_02",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R404__D404_1",
+      "source": "R404",
+      "target": "D404_1",
+      "length_m": 5.258745097454335,
+      "travel_seconds": 4.382287581211946,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D404_1__C4_03",
+      "source": "D404_1",
+      "target": "C4_03",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R404__D404_2",
+      "source": "R404",
+      "target": "D404_2",
+      "length_m": 5.258745097454335,
+      "travel_seconds": 4.382287581211946,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D404_2__C4_04",
+      "source": "D404_2",
+      "target": "C4_04",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R403__D403_1",
+      "source": "R403",
+      "target": "D403_1",
+      "length_m": 5.258745097454333,
+      "travel_seconds": 4.382287581211944,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D403_1__C4_05",
+      "source": "D403_1",
+      "target": "C4_05",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R403__D403_2",
+      "source": "R403",
+      "target": "D403_2",
+      "length_m": 5.258745097454336,
+      "travel_seconds": 4.382287581211947,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D403_2__C4_06",
+      "source": "D403_2",
+      "target": "C4_06",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C4_07__L4_2",
+      "source": "C4_07",
+      "target": "L4_2",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L4_2__C4_07",
+      "source": "L4_2",
+      "target": "C4_07",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L4_2__S4_2",
+      "source": "L4_2",
+      "target": "S4_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S4_2__L4_2",
+      "source": "S4_2",
+      "target": "L4_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R401-402__D401-402_1",
+      "source": "R401-402",
+      "target": "D401-402_1",
+      "length_m": 6.873019714797851,
+      "travel_seconds": 5.72751642899821,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D401-402_1__C4_08",
+      "source": "D401-402_1",
+      "target": "C4_08",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R401-402__D401-402_2",
+      "source": "R401-402",
+      "target": "D401-402_2",
+      "length_m": 6.873019714797857,
+      "travel_seconds": 5.727516428998214,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D401-402_2__C4_09",
+      "source": "D401-402_2",
+      "target": "C4_09",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C4_00__C4_01",
+      "source": "C4_00",
+      "target": "C4_01",
+      "length_m": 5.84,
+      "travel_seconds": 4.866666666666667,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_01__C4_00",
+      "source": "C4_01",
+      "target": "C4_00",
+      "length_m": 5.84,
+      "travel_seconds": 4.866666666666667,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_01__C4_02",
+      "source": "C4_01",
+      "target": "C4_02",
+      "length_m": 6.720000000000001,
+      "travel_seconds": 5.6000000000000005,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_02__C4_01",
+      "source": "C4_02",
+      "target": "C4_01",
+      "length_m": 6.720000000000001,
+      "travel_seconds": 5.6000000000000005,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_02__C4_03",
+      "source": "C4_02",
+      "target": "C4_03",
+      "length_m": 4.16,
+      "travel_seconds": 3.466666666666667,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_03__C4_02",
+      "source": "C4_03",
+      "target": "C4_02",
+      "length_m": 4.16,
+      "travel_seconds": 3.466666666666667,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_03__C4_04",
+      "source": "C4_03",
+      "target": "C4_04",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_04__C4_03",
+      "source": "C4_04",
+      "target": "C4_03",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_04__C4_05",
+      "source": "C4_04",
+      "target": "C4_05",
+      "length_m": 3.8400000000000034,
+      "travel_seconds": 3.200000000000003,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_05__C4_04",
+      "source": "C4_05",
+      "target": "C4_04",
+      "length_m": 3.8400000000000034,
+      "travel_seconds": 3.200000000000003,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_05__C4_06",
+      "source": "C4_05",
+      "target": "C4_06",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_06__C4_05",
+      "source": "C4_06",
+      "target": "C4_05",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_06__C4_07",
+      "source": "C4_06",
+      "target": "C4_07",
+      "length_m": 8.719999999999999,
+      "travel_seconds": 7.266666666666666,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_07__C4_06",
+      "source": "C4_07",
+      "target": "C4_06",
+      "length_m": 8.719999999999999,
+      "travel_seconds": 7.266666666666666,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_07__C4_08",
+      "source": "C4_07",
+      "target": "C4_08",
+      "length_m": 10.320000000000007,
+      "travel_seconds": 8.600000000000007,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_08__C4_07",
+      "source": "C4_08",
+      "target": "C4_07",
+      "length_m": 10.320000000000007,
+      "travel_seconds": 8.600000000000007,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_08__C4_09",
+      "source": "C4_08",
+      "target": "C4_09",
+      "length_m": 10.559999999999995,
+      "travel_seconds": 8.799999999999997,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C4_09__C4_08",
+      "source": "C4_09",
+      "target": "C4_08",
+      "length_m": 10.559999999999995,
+      "travel_seconds": 8.799999999999997,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_00__L5_1",
+      "source": "C5_00",
+      "target": "L5_1",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L5_1__C5_00",
+      "source": "L5_1",
+      "target": "C5_00",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L5_1__S5_1",
+      "source": "L5_1",
+      "target": "S5_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S5_1__L5_1",
+      "source": "S5_1",
+      "target": "L5_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R505__D505_1",
+      "source": "R505",
+      "target": "D505_1",
+      "length_m": 5.536208088574707,
+      "travel_seconds": 4.613506740478923,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D505_1__C5_01",
+      "source": "D505_1",
+      "target": "C5_01",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R505__D505_2",
+      "source": "R505",
+      "target": "D505_2",
+      "length_m": 5.536208088574706,
+      "travel_seconds": 4.613506740478922,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D505_2__C5_02",
+      "source": "D505_2",
+      "target": "C5_02",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R504__D504_1",
+      "source": "R504",
+      "target": "D504_1",
+      "length_m": 5.131237667463863,
+      "travel_seconds": 4.27603138955322,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D504_1__C5_03",
+      "source": "D504_1",
+      "target": "C5_03",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R504__D504_2",
+      "source": "R504",
+      "target": "D504_2",
+      "length_m": 5.131237667463865,
+      "travel_seconds": 4.276031389553221,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D504_2__C5_04",
+      "source": "D504_2",
+      "target": "C5_04",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R503__D503_1",
+      "source": "R503",
+      "target": "D503_1",
+      "length_m": 5.393922505932022,
+      "travel_seconds": 4.494935421610019,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D503_1__C5_05",
+      "source": "D503_1",
+      "target": "C5_05",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R503__D503_2",
+      "source": "R503",
+      "target": "D503_2",
+      "length_m": 5.393922505932022,
+      "travel_seconds": 4.494935421610019,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D503_2__C5_06",
+      "source": "D503_2",
+      "target": "C5_06",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C5_07__L5_2",
+      "source": "C5_07",
+      "target": "L5_2",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L5_2__C5_07",
+      "source": "L5_2",
+      "target": "C5_07",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L5_2__S5_2",
+      "source": "L5_2",
+      "target": "S5_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S5_2__L5_2",
+      "source": "S5_2",
+      "target": "L5_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R501-502__D501-502_1",
+      "source": "R501-502",
+      "target": "D501-502_1",
+      "length_m": 6.082762530298222,
+      "travel_seconds": 5.068968775248519,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D501-502_1__C5_08",
+      "source": "D501-502_1",
+      "target": "C5_08",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R501-502__D501-502_2",
+      "source": "R501-502",
+      "target": "D501-502_2",
+      "length_m": 6.082762530298222,
+      "travel_seconds": 5.068968775248519,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D501-502_2__C5_09",
+      "source": "D501-502_2",
+      "target": "C5_09",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C5_00__C5_01",
+      "source": "C5_00",
+      "target": "C5_01",
+      "length_m": 5.84,
+      "travel_seconds": 4.866666666666667,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_01__C5_00",
+      "source": "C5_01",
+      "target": "C5_00",
+      "length_m": 5.84,
+      "travel_seconds": 4.866666666666667,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_01__C5_02",
+      "source": "C5_01",
+      "target": "C5_02",
+      "length_m": 6.720000000000001,
+      "travel_seconds": 5.6000000000000005,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_02__C5_01",
+      "source": "C5_02",
+      "target": "C5_01",
+      "length_m": 6.720000000000001,
+      "travel_seconds": 5.6000000000000005,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_02__C5_03",
+      "source": "C5_02",
+      "target": "C5_03",
+      "length_m": 4.0,
+      "travel_seconds": 3.3333333333333335,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_03__C5_02",
+      "source": "C5_03",
+      "target": "C5_02",
+      "length_m": 4.0,
+      "travel_seconds": 3.3333333333333335,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_03__C5_04",
+      "source": "C5_03",
+      "target": "C5_04",
+      "length_m": 5.279999999999998,
+      "travel_seconds": 4.399999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_04__C5_03",
+      "source": "C5_04",
+      "target": "C5_03",
+      "length_m": 5.279999999999998,
+      "travel_seconds": 4.399999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_04__C5_05",
+      "source": "C5_04",
+      "target": "C5_05",
+      "length_m": 3.8400000000000034,
+      "travel_seconds": 3.200000000000003,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_05__C5_04",
+      "source": "C5_05",
+      "target": "C5_04",
+      "length_m": 3.8400000000000034,
+      "travel_seconds": 3.200000000000003,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_05__C5_06",
+      "source": "C5_05",
+      "target": "C5_06",
+      "length_m": 6.239999999999995,
+      "travel_seconds": 5.199999999999996,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_06__C5_05",
+      "source": "C5_06",
+      "target": "C5_05",
+      "length_m": 6.239999999999995,
+      "travel_seconds": 5.199999999999996,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_06__C5_07",
+      "source": "C5_06",
+      "target": "C5_07",
+      "length_m": 8.880000000000003,
+      "travel_seconds": 7.400000000000002,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_07__C5_06",
+      "source": "C5_07",
+      "target": "C5_06",
+      "length_m": 8.880000000000003,
+      "travel_seconds": 7.400000000000002,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_07__C5_08",
+      "source": "C5_07",
+      "target": "C5_08",
+      "length_m": 9.600000000000001,
+      "travel_seconds": 8.000000000000002,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_08__C5_07",
+      "source": "C5_08",
+      "target": "C5_07",
+      "length_m": 9.600000000000001,
+      "travel_seconds": 8.000000000000002,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_08__C5_09",
+      "source": "C5_08",
+      "target": "C5_09",
+      "length_m": 8.400000000000006,
+      "travel_seconds": 7.000000000000005,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C5_09__C5_08",
+      "source": "C5_09",
+      "target": "C5_08",
+      "length_m": 8.400000000000006,
+      "travel_seconds": 7.000000000000005,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_00__L6_1",
+      "source": "C6_00",
+      "target": "L6_1",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L6_1__C6_00",
+      "source": "L6_1",
+      "target": "C6_00",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L6_1__S6_1",
+      "source": "L6_1",
+      "target": "S6_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S6_1__L6_1",
+      "source": "S6_1",
+      "target": "L6_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R606-607-608__D606-607-608_1",
+      "source": "R606-607-608",
+      "target": "D606-607-608_1",
+      "length_m": 6.690411048657625,
+      "travel_seconds": 5.575342540548021,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D606-607-608_1__C6_01",
+      "source": "D606-607-608_1",
+      "target": "C6_01",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R606-607-608__D606-607-608_2",
+      "source": "R606-607-608",
+      "target": "D606-607-608_2",
+      "length_m": 6.690411048657623,
+      "travel_seconds": 5.57534254054802,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D606-607-608_2__C6_02",
+      "source": "D606-607-608_2",
+      "target": "C6_02",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R603-604-605__D603-604-605_1",
+      "source": "R603-604-605",
+      "target": "D603-604-605_1",
+      "length_m": 6.000533309631738,
+      "travel_seconds": 5.000444424693115,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D603-604-605_1__C6_03",
+      "source": "D603-604-605_1",
+      "target": "C6_03",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R603-604-605__D603-604-605_2",
+      "source": "R603-604-605",
+      "target": "D603-604-605_2",
+      "length_m": 6.000533309631738,
+      "travel_seconds": 5.000444424693115,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D603-604-605_2__C6_04",
+      "source": "D603-604-605_2",
+      "target": "C6_04",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C6_05__L6_2",
+      "source": "C6_05",
+      "target": "L6_2",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L6_2__C6_05",
+      "source": "L6_2",
+      "target": "C6_05",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L6_2__S6_2",
+      "source": "L6_2",
+      "target": "S6_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S6_2__L6_2",
+      "source": "S6_2",
+      "target": "L6_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R601-602__D601-602_1",
+      "source": "R601-602",
+      "target": "D601-602_1",
+      "length_m": 5.258745097454333,
+      "travel_seconds": 4.382287581211944,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D601-602_1__C6_06",
+      "source": "D601-602_1",
+      "target": "C6_06",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R601-602__D601-602_2",
+      "source": "R601-602",
+      "target": "D601-602_2",
+      "length_m": 5.258745097454336,
+      "travel_seconds": 4.382287581211947,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D601-602_2__C6_07",
+      "source": "D601-602_2",
+      "target": "C6_07",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C6_00__C6_01",
+      "source": "C6_00",
+      "target": "C6_01",
+      "length_m": 6.960000000000001,
+      "travel_seconds": 5.800000000000001,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_01__C6_00",
+      "source": "C6_01",
+      "target": "C6_00",
+      "length_m": 6.960000000000001,
+      "travel_seconds": 5.800000000000001,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_01__C6_02",
+      "source": "C6_01",
+      "target": "C6_02",
+      "length_m": 10.08,
+      "travel_seconds": 8.4,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_02__C6_01",
+      "source": "C6_02",
+      "target": "C6_01",
+      "length_m": 10.08,
+      "travel_seconds": 8.4,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_02__C6_03",
+      "source": "C6_02",
+      "target": "C6_03",
+      "length_m": 6.079999999999998,
+      "travel_seconds": 5.0666666666666655,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_03__C6_02",
+      "source": "C6_03",
+      "target": "C6_02",
+      "length_m": 6.079999999999998,
+      "travel_seconds": 5.0666666666666655,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_03__C6_04",
+      "source": "C6_03",
+      "target": "C6_04",
+      "length_m": 8.160000000000004,
+      "travel_seconds": 6.800000000000003,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_04__C6_03",
+      "source": "C6_04",
+      "target": "C6_03",
+      "length_m": 8.160000000000004,
+      "travel_seconds": 6.800000000000003,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_04__C6_05",
+      "source": "C6_04",
+      "target": "C6_05",
+      "length_m": 9.519999999999996,
+      "travel_seconds": 7.93333333333333,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_05__C6_04",
+      "source": "C6_05",
+      "target": "C6_04",
+      "length_m": 9.519999999999996,
+      "travel_seconds": 7.93333333333333,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_05__C6_06",
+      "source": "C6_05",
+      "target": "C6_06",
+      "length_m": 8.720000000000006,
+      "travel_seconds": 7.266666666666672,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_06__C6_05",
+      "source": "C6_06",
+      "target": "C6_05",
+      "length_m": 8.720000000000006,
+      "travel_seconds": 7.266666666666672,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_06__C6_07",
+      "source": "C6_06",
+      "target": "C6_07",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C6_07__C6_06",
+      "source": "C6_07",
+      "target": "C6_06",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_00__L7_1",
+      "source": "C7_00",
+      "target": "L7_1",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L7_1__C7_00",
+      "source": "L7_1",
+      "target": "C7_00",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L7_1__S7_1",
+      "source": "L7_1",
+      "target": "S7_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S7_1__L7_1",
+      "source": "S7_1",
+      "target": "L7_1",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R705__D705_1",
+      "source": "R705",
+      "target": "D705_1",
+      "length_m": 5.258745097454335,
+      "travel_seconds": 4.382287581211946,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D705_1__C7_01",
+      "source": "D705_1",
+      "target": "C7_01",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R705__D705_2",
+      "source": "R705",
+      "target": "D705_2",
+      "length_m": 5.258745097454335,
+      "travel_seconds": 4.382287581211946,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D705_2__C7_02",
+      "source": "D705_2",
+      "target": "C7_02",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R704__D704_1",
+      "source": "R704",
+      "target": "D704_1",
+      "length_m": 4.4,
+      "travel_seconds": 3.666666666666667,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D704_1__C7_03",
+      "source": "D704_1",
+      "target": "C7_03",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R702-703__D702-703_1",
+      "source": "R702-703",
+      "target": "D702-703_1",
+      "length_m": 6.000533309631738,
+      "travel_seconds": 5.000444424693115,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D702-703_1__C7_04",
+      "source": "D702-703_1",
+      "target": "C7_04",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "R702-703__D702-703_2",
+      "source": "R702-703",
+      "target": "D702-703_2",
+      "length_m": 6.000533309631735,
+      "travel_seconds": 5.000444424693113,
+      "entry_capacity": 7,
+      "in_transit_capacity": 14,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D702-703_2__C7_05",
+      "source": "D702-703_2",
+      "target": "C7_05",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C7_06__L7_2",
+      "source": "C7_06",
+      "target": "L7_2",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L7_2__C7_06",
+      "source": "L7_2",
+      "target": "C7_06",
+      "length_m": 2.3000000000000007,
+      "travel_seconds": 1.9166666666666674,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "L7_2__S7_2",
+      "source": "L7_2",
+      "target": "S7_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "S7_2__L7_2",
+      "source": "S7_2",
+      "target": "L7_2",
+      "length_m": 3.0999999999999996,
+      "travel_seconds": 2.583333333333333,
+      "entry_capacity": 9,
+      "in_transit_capacity": 9,
+      "kind": "CORE_ACCESS"
+    },
+    {
+      "id": "R701__D701_1",
+      "source": "R701",
+      "target": "D701_1",
+      "length_m": 4.4,
+      "travel_seconds": 3.666666666666667,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "ROOM_DOOR"
+    },
+    {
+      "id": "D701_1__C7_07",
+      "source": "D701_1",
+      "target": "C7_07",
+      "length_m": 1.0,
+      "travel_seconds": 0.8333333333333334,
+      "entry_capacity": 7,
+      "in_transit_capacity": 7,
+      "kind": "DOOR_CORRIDOR"
+    },
+    {
+      "id": "C7_00__C7_01",
+      "source": "C7_00",
+      "target": "C7_01",
+      "length_m": 5.520000000000001,
+      "travel_seconds": 4.600000000000001,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_01__C7_00",
+      "source": "C7_01",
+      "target": "C7_00",
+      "length_m": 5.520000000000001,
+      "travel_seconds": 4.600000000000001,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_01__C7_02",
+      "source": "C7_01",
+      "target": "C7_02",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_02__C7_01",
+      "source": "C7_02",
+      "target": "C7_01",
+      "length_m": 5.759999999999998,
+      "travel_seconds": 4.799999999999999,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_02__C7_03",
+      "source": "C7_02",
+      "target": "C7_03",
+      "length_m": 3.9200000000000017,
+      "travel_seconds": 3.2666666666666684,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_03__C7_02",
+      "source": "C7_03",
+      "target": "C7_02",
+      "length_m": 3.9200000000000017,
+      "travel_seconds": 3.2666666666666684,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_03__C7_04",
+      "source": "C7_03",
+      "target": "C7_04",
+      "length_m": 4.719999999999999,
+      "travel_seconds": 3.9333333333333327,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_04__C7_03",
+      "source": "C7_04",
+      "target": "C7_03",
+      "length_m": 4.719999999999999,
+      "travel_seconds": 3.9333333333333327,
+      "entry_capacity": 6,
+      "in_transit_capacity": 6,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_04__C7_05",
+      "source": "C7_04",
+      "target": "C7_05",
+      "length_m": 8.16,
+      "travel_seconds": 6.800000000000001,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_05__C7_04",
+      "source": "C7_05",
+      "target": "C7_04",
+      "length_m": 8.16,
+      "travel_seconds": 6.800000000000001,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_05__C7_06",
+      "source": "C7_05",
+      "target": "C7_06",
+      "length_m": 9.519999999999996,
+      "travel_seconds": 7.93333333333333,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_06__C7_05",
+      "source": "C7_06",
+      "target": "C7_05",
+      "length_m": 9.519999999999996,
+      "travel_seconds": 7.93333333333333,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_06__C7_07",
+      "source": "C7_06",
+      "target": "C7_07",
+      "length_m": 8.800000000000004,
+      "travel_seconds": 7.3333333333333375,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "C7_07__C7_06",
+      "source": "C7_07",
+      "target": "C7_06",
+      "length_m": 8.800000000000004,
+      "travel_seconds": 7.3333333333333375,
+      "entry_capacity": 6,
+      "in_transit_capacity": 12,
+      "kind": "CORRIDOR_LANE"
+    },
+    {
+      "id": "S2_1__S1_1",
+      "source": "S2_1",
+      "target": "S1_1",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S2_2__S1_2",
+      "source": "S2_2",
+      "target": "S1_2",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S3_1__S2_1",
+      "source": "S3_1",
+      "target": "S2_1",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S3_2__S2_2",
+      "source": "S3_2",
+      "target": "S2_2",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S4_1__S3_1",
+      "source": "S4_1",
+      "target": "S3_1",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S4_2__S3_2",
+      "source": "S4_2",
+      "target": "S3_2",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S5_1__S4_1",
+      "source": "S5_1",
+      "target": "S4_1",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S5_2__S4_2",
+      "source": "S5_2",
+      "target": "S4_2",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S6_1__S5_1",
+      "source": "S6_1",
+      "target": "S5_1",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S6_2__S5_2",
+      "source": "S6_2",
+      "target": "S5_2",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S7_1__S6_1",
+      "source": "S7_1",
+      "target": "S6_1",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    },
+    {
+      "id": "S7_2__S6_2",
+      "source": "S7_2",
+      "target": "S6_2",
+      "length_m": 12.0,
+      "travel_seconds": 17.142857142857142,
+      "entry_capacity": 9,
+      "in_transit_capacity": 36,
+      "kind": "STAIR_DOWN"
+    }
+  ],
+  "rooms": [
+    {
+      "floor": 1,
+      "label": "104-105",
+      "node_id": "R104-105",
+      "width_m": 18.4,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 1,
+      "label": "103",
+      "node_id": "R103",
+      "width_m": 13.6,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 1,
+      "label": "102",
+      "node_id": "R102",
+      "width_m": 8.8,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 1,
+      "label": "101",
+      "node_id": "R101",
+      "width_m": 4.8,
+      "depth_m": 8.8,
+      "max_people": 20,
+      "door_count": 1,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 2,
+      "label": "205",
+      "node_id": "R205",
+      "width_m": 12.0,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 2,
+      "label": "204",
+      "node_id": "R204",
+      "width_m": 4.8,
+      "depth_m": 8.8,
+      "max_people": 20,
+      "door_count": 1,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 2,
+      "label": "203",
+      "node_id": "R203",
+      "width_m": 13.6,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 2,
+      "label": "201-202",
+      "node_id": "R201-202",
+      "width_m": 18.4,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 3,
+      "label": "305",
+      "node_id": "R305",
+      "width_m": 12.0,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 3,
+      "label": "304",
+      "node_id": "R304",
+      "width_m": 8.8,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 3,
+      "label": "303",
+      "node_id": "R303",
+      "width_m": 9.6,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 3,
+      "label": "301-302",
+      "node_id": "R301-302",
+      "width_m": 18.4,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 4,
+      "label": "405",
+      "node_id": "R405",
+      "width_m": 11.2,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 4,
+      "label": "404",
+      "node_id": "R404",
+      "width_m": 9.6,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 4,
+      "label": "403",
+      "node_id": "R403",
+      "width_m": 9.6,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 4,
+      "label": "401-402",
+      "node_id": "R401-402",
+      "width_m": 17.6,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 5,
+      "label": "505",
+      "node_id": "R505",
+      "width_m": 11.2,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 5,
+      "label": "504",
+      "node_id": "R504",
+      "width_m": 8.8,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 5,
+      "label": "503",
+      "node_id": "R503",
+      "width_m": 10.4,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 5,
+      "label": "501-502",
+      "node_id": "R501-502",
+      "width_m": 14.0,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 6,
+      "label": "606-607-608",
+      "node_id": "R606-607-608",
+      "width_m": 16.8,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 6,
+      "label": "603-604-605",
+      "node_id": "R603-604-605",
+      "width_m": 13.6,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 6,
+      "label": "601-602",
+      "node_id": "R601-602",
+      "width_m": 9.6,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 7,
+      "label": "705",
+      "node_id": "R705",
+      "width_m": 9.6,
+      "depth_m": 8.8,
+      "max_people": 40,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 7,
+      "label": "704",
+      "node_id": "R704",
+      "width_m": 4.0,
+      "depth_m": 8.8,
+      "max_people": 20,
+      "door_count": 1,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 7,
+      "label": "702-703",
+      "node_id": "R702-703",
+      "width_m": 13.6,
+      "depth_m": 8.8,
+      "max_people": 80,
+      "door_count": 2,
+      "door_location_source": "approximate positions from image convention"
+    },
+    {
+      "floor": 7,
+      "label": "701",
+      "node_id": "R701",
+      "width_m": 4.0,
+      "depth_m": 8.8,
+      "max_people": 20,
+      "door_count": 1,
+      "door_location_source": "approximate positions from image convention"
+    }
+  ],
+  "layout": {
+    "1": {
+      "length_m": 66.4,
+      "blocks": [
+        {
+          "kind": "core",
+          "label": "1",
+          "x0": 0.0,
+          "width_m": 7.2,
+          "depth_m": 8.8,
+          "lobby_node": "L1_1",
+          "stair_node": "S1_1",
+          "corridor_node": "EXIT1"
+        },
+        {
+          "kind": "room",
+          "label": "104-105",
+          "x0": 7.2,
+          "width_m": 18.4,
+          "depth_m": 8.8,
+          "node_id": "R104-105",
+          "max_people": 80,
+          "door_x": [
+            10.879999999999999,
+            21.919999999999998
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "103",
+          "x0": 25.599999999999998,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "node_id": "R103",
+          "max_people": 40,
+          "door_x": [
+            28.319999999999997,
+            36.48
+          ]
+        },
+        {
+          "kind": "core",
+          "label": "2",
+          "x0": 39.199999999999996,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "lobby_node": "L1_2",
+          "stair_node": "S1_2",
+          "corridor_node": "EXIT2"
+        },
+        {
+          "kind": "room",
+          "label": "102",
+          "x0": 52.8,
+          "width_m": 8.8,
+          "depth_m": 8.8,
+          "node_id": "R102",
+          "max_people": 40,
+          "door_x": [
+            54.559999999999995,
+            59.839999999999996
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "101",
+          "x0": 61.599999999999994,
+          "width_m": 4.8,
+          "depth_m": 8.8,
+          "node_id": "R101",
+          "max_people": 20,
+          "door_x": [
+            63.99999999999999
+          ]
+        }
+      ]
+    },
+    "2": {
+      "length_m": 69.6,
+      "blocks": [
+        {
+          "kind": "core",
+          "label": "1",
+          "x0": 0.0,
+          "width_m": 7.2,
+          "depth_m": 8.8,
+          "lobby_node": "L2_1",
+          "stair_node": "S2_1",
+          "corridor_node": "C2_00"
+        },
+        {
+          "kind": "room",
+          "label": "205",
+          "x0": 7.2,
+          "width_m": 12.0,
+          "depth_m": 8.8,
+          "node_id": "R205",
+          "max_people": 40,
+          "door_x": [
+            9.600000000000001,
+            16.8
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "204",
+          "x0": 19.2,
+          "width_m": 4.8,
+          "depth_m": 8.8,
+          "node_id": "R204",
+          "max_people": 20,
+          "door_x": [
+            21.599999999999998
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "203",
+          "x0": 24.0,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "node_id": "R203",
+          "max_people": 40,
+          "door_x": [
+            26.72,
+            34.88
+          ]
+        },
+        {
+          "kind": "core",
+          "label": "2",
+          "x0": 37.6,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "lobby_node": "L2_2",
+          "stair_node": "S2_2",
+          "corridor_node": "C2_06"
+        },
+        {
+          "kind": "room",
+          "label": "201-202",
+          "x0": 51.2,
+          "width_m": 18.4,
+          "depth_m": 8.8,
+          "node_id": "R201-202",
+          "max_people": 80,
+          "door_x": [
+            54.88,
+            65.92
+          ]
+        }
+      ]
+    },
+    "3": {
+      "length_m": 69.6,
+      "blocks": [
+        {
+          "kind": "core",
+          "label": "1",
+          "x0": 0.0,
+          "width_m": 7.2,
+          "depth_m": 8.8,
+          "lobby_node": "L3_1",
+          "stair_node": "S3_1",
+          "corridor_node": "C3_00"
+        },
+        {
+          "kind": "room",
+          "label": "305",
+          "x0": 7.2,
+          "width_m": 12.0,
+          "depth_m": 8.8,
+          "node_id": "R305",
+          "max_people": 40,
+          "door_x": [
+            9.600000000000001,
+            16.8
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "304",
+          "x0": 19.2,
+          "width_m": 8.8,
+          "depth_m": 8.8,
+          "node_id": "R304",
+          "max_people": 40,
+          "door_x": [
+            20.96,
+            26.240000000000002
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "303",
+          "x0": 28.0,
+          "width_m": 9.6,
+          "depth_m": 8.8,
+          "node_id": "R303",
+          "max_people": 40,
+          "door_x": [
+            29.92,
+            35.68
+          ]
+        },
+        {
+          "kind": "core",
+          "label": "2",
+          "x0": 37.6,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "lobby_node": "L3_2",
+          "stair_node": "S3_2",
+          "corridor_node": "C3_07"
+        },
+        {
+          "kind": "room",
+          "label": "301-302",
+          "x0": 51.2,
+          "width_m": 18.4,
+          "depth_m": 8.8,
+          "node_id": "R301-302",
+          "max_people": 80,
+          "door_x": [
+            54.88,
+            65.92
+          ]
+        }
+      ]
+    },
+    "4": {
+      "length_m": 68.8,
+      "blocks": [
+        {
+          "kind": "core",
+          "label": "1",
+          "x0": 0.0,
+          "width_m": 7.2,
+          "depth_m": 8.8,
+          "lobby_node": "L4_1",
+          "stair_node": "S4_1",
+          "corridor_node": "C4_00"
+        },
+        {
+          "kind": "room",
+          "label": "405",
+          "x0": 7.2,
+          "width_m": 11.2,
+          "depth_m": 8.8,
+          "node_id": "R405",
+          "max_people": 40,
+          "door_x": [
+            9.44,
+            16.16
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "404",
+          "x0": 18.4,
+          "width_m": 9.6,
+          "depth_m": 8.8,
+          "node_id": "R404",
+          "max_people": 40,
+          "door_x": [
+            20.32,
+            26.08
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "403",
+          "x0": 28.0,
+          "width_m": 9.6,
+          "depth_m": 8.8,
+          "node_id": "R403",
+          "max_people": 40,
+          "door_x": [
+            29.92,
+            35.68
+          ]
+        },
+        {
+          "kind": "core",
+          "label": "2",
+          "x0": 37.6,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "lobby_node": "L4_2",
+          "stair_node": "S4_2",
+          "corridor_node": "C4_07"
+        },
+        {
+          "kind": "room",
+          "label": "401-402",
+          "x0": 51.2,
+          "width_m": 17.6,
+          "depth_m": 8.8,
+          "node_id": "R401-402",
+          "max_people": 80,
+          "door_x": [
+            54.720000000000006,
+            65.28
+          ]
+        }
+      ]
+    },
+    "5": {
+      "length_m": 65.2,
+      "blocks": [
+        {
+          "kind": "core",
+          "label": "1",
+          "x0": 0.0,
+          "width_m": 7.2,
+          "depth_m": 8.8,
+          "lobby_node": "L5_1",
+          "stair_node": "S5_1",
+          "corridor_node": "C5_00"
+        },
+        {
+          "kind": "room",
+          "label": "505",
+          "x0": 7.2,
+          "width_m": 11.2,
+          "depth_m": 8.8,
+          "node_id": "R505",
+          "max_people": 40,
+          "door_x": [
+            9.44,
+            16.16
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "504",
+          "x0": 18.4,
+          "width_m": 8.8,
+          "depth_m": 8.8,
+          "node_id": "R504",
+          "max_people": 40,
+          "door_x": [
+            20.16,
+            25.439999999999998
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "503",
+          "x0": 27.2,
+          "width_m": 10.4,
+          "depth_m": 8.8,
+          "node_id": "R503",
+          "max_people": 40,
+          "door_x": [
+            29.28,
+            35.519999999999996
+          ]
+        },
+        {
+          "kind": "core",
+          "label": "2",
+          "x0": 37.6,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "lobby_node": "L5_2",
+          "stair_node": "S5_2",
+          "corridor_node": "C5_07"
+        },
+        {
+          "kind": "room",
+          "label": "501-502",
+          "x0": 51.2,
+          "width_m": 14.0,
+          "depth_m": 8.8,
+          "node_id": "R501-502",
+          "max_people": 80,
+          "door_x": [
+            54.0,
+            62.400000000000006
+          ]
+        }
+      ]
+    },
+    "6": {
+      "length_m": 60.8,
+      "blocks": [
+        {
+          "kind": "core",
+          "label": "1",
+          "x0": 0.0,
+          "width_m": 7.2,
+          "depth_m": 8.8,
+          "lobby_node": "L6_1",
+          "stair_node": "S6_1",
+          "corridor_node": "C6_00"
+        },
+        {
+          "kind": "room",
+          "label": "606-607-608",
+          "x0": 7.2,
+          "width_m": 16.8,
+          "depth_m": 8.8,
+          "node_id": "R606-607-608",
+          "max_people": 80,
+          "door_x": [
+            10.56,
+            20.64
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "603-604-605",
+          "x0": 24.0,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "node_id": "R603-604-605",
+          "max_people": 80,
+          "door_x": [
+            26.72,
+            34.88
+          ]
+        },
+        {
+          "kind": "core",
+          "label": "2",
+          "x0": 37.6,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "lobby_node": "L6_2",
+          "stair_node": "S6_2",
+          "corridor_node": "C6_05"
+        },
+        {
+          "kind": "room",
+          "label": "601-602",
+          "x0": 51.2,
+          "width_m": 9.6,
+          "depth_m": 8.8,
+          "node_id": "R601-602",
+          "max_people": 80,
+          "door_x": [
+            53.120000000000005,
+            58.88
+          ]
+        }
+      ]
+    },
+    "7": {
+      "length_m": 52.0,
+      "blocks": [
+        {
+          "kind": "core",
+          "label": "1",
+          "x0": 0.0,
+          "width_m": 7.2,
+          "depth_m": 8.8,
+          "lobby_node": "L7_1",
+          "stair_node": "S7_1",
+          "corridor_node": "C7_00"
+        },
+        {
+          "kind": "room",
+          "label": "705",
+          "x0": 7.2,
+          "width_m": 9.6,
+          "depth_m": 8.8,
+          "node_id": "R705",
+          "max_people": 40,
+          "door_x": [
+            9.120000000000001,
+            14.879999999999999
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "704",
+          "x0": 16.8,
+          "width_m": 4.0,
+          "depth_m": 8.8,
+          "node_id": "R704",
+          "max_people": 20,
+          "door_x": [
+            18.8
+          ]
+        },
+        {
+          "kind": "room",
+          "label": "702-703",
+          "x0": 20.8,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "node_id": "R702-703",
+          "max_people": 80,
+          "door_x": [
+            23.52,
+            31.68
+          ]
+        },
+        {
+          "kind": "core",
+          "label": "2",
+          "x0": 34.4,
+          "width_m": 13.6,
+          "depth_m": 8.8,
+          "lobby_node": "L7_2",
+          "stair_node": "S7_2",
+          "corridor_node": "C7_06"
+        },
+        {
+          "kind": "room",
+          "label": "701",
+          "x0": 48.0,
+          "width_m": 4.0,
+          "depth_m": 8.8,
+          "node_id": "R701",
+          "max_people": 20,
+          "door_x": [
+            50.0
+          ]
+        }
+      ]
+    }
+  },
+  "parameters": {
+    "time_step_seconds": 5,
+    "walking_speed_m_s": 1.2,
+    "stair_speed_m_s": 0.7,
+    "interfloor_path_m": 12.0,
+    "specific_flow_people_m_s": 1.3,
+    "assumed_room_door_width_m": 1.2,
+    "assumed_stair_usable_width_m": 1.5,
+    "corridor_width_m": 2.0,
+    "corridor_lane_width_m": 1.0,
+    "room_depth_m": 8.8,
+    "stair_footprint_width_m_from_image": 5.0,
+    "corridor_node_storage": 24,
+    "lobby_node_storage": 30,
+    "stair_node_storage": 36,
+    "fire_propagation_m_s": 0.03,
+    "smoke_propagation_m_s": 0.15,
+    "smoke_upstairs_seconds": 25.0,
+    "smoke_downstairs_seconds": 45.0,
+    "duration_seconds": 900,
+    "seed": 2026
+  }
+}

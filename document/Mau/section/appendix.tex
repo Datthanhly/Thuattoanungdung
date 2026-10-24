@@ -1,0 +1,60 @@
+\newcommand{\appendixtables}[1]{%
+\setcounter{table}{0}%
+\renewcommand{\thetable}{#1.\arabic{table}}%
+\renewcommand{\theHtable}{appendix.#1.\arabic{table}}%
+}
+\clearpage\appendixtables{A}\section*{PHỤ LỤC A. DANH SÁCH KHU PHÒNG}
+\addcontentsline{toc}{section}{Phụ lục A. Danh sách khu phòng}
+Mỗi dòng biểu diễn một nguồn dân số. Chiều sâu phòng được đặt bằng 8,8 m; sức chứa là giá trị tối đa của dữ liệu mặt bằng. Khu ghép được thống kê một lần để bảo toàn tổng dân số nguồn. Hàng Tổng cộng dân số và số cửa; không cộng các kích thước phòng.
+\bang{rooms}{Danh sách 27 khu phòng, tổng sức chứa 1.360 người}
+
+\clearpage\appendixtables{B}\section*{PHỤ LỤC B. KÝ HIỆU}
+\addcontentsline{toc}{section}{Phụ lục B. Ký hiệu}
+\begingroup\fontsize{12}{16}\selectfont
+\begin{longtable}{P{3.5cm}P{10.8cm}}
+\caption{Ký hiệu sử dụng trong mô hình và thuật toán}\\
+\toprule Ký hiệu & Ý nghĩa\\\midrule\endfirsthead
+\multicolumn{2}{l}{\small Bảng B.1 (tiếp)}\\\toprule Ký hiệu & Ý nghĩa\\\midrule\endhead
+\bottomrule\endfoot
+$G=(V,E)$ & Đồ thị không gian có hướng; $V$ là tập nút, $E$ là tập cạnh.\\
+$n,m$ & Số nút và cạnh của đồ thị không gian.\\
+$n^{\prime},m^{\prime}$ & Số nút và cạnh thuận của mạng TEN sau cắt trạng thái.\\
+$N$ & Tổng dân số nguồn; đầy tải là 1.360 người.\\
+$\Delta t,k,K$ & Bước thời gian theo giây, chỉ số bước và horizon theo bước.\\
+$\ell_e,v_e$ & Chiều dài cạnh $e$ (m) và tốc độ giả định trên cạnh (m/s).\\
+$d_e$ & Số bước đi hết cạnh: $\max(1,\lceil\ell_e/(v_e\Delta t)\rceil)$.\\
+$w_e,q$ & Bề rộng sử dụng cạnh (m) và suất thông hành (người/(m.s)).\\
+$U_e$ & Năng lực vào cạnh trong một bước, $\lfloor w_eq\Delta t\rfloor$.\\
+$C_e$ & Sức chứa cạnh trong cấu hình đoàn: $C_e=d_eU_e$.\\
+$B_v$ & Sức chứa của nút $v$ tại một mốc thời gian.\\
+$T_v$ & Thời điểm nút mất an toàn, tính theo giây.\\
+$x_{e,k}$ & Số người bắt đầu đi trên cạnh $e$ tại bước $k$.\\
+$y_{v,k}$ & Số người hiện diện tại nút $v$ sau đến, trước rời ở bước $k$.\\
+$z_{v,k}$ & Số người chờ tại $v$ từ bước $k$ sang $k+1$.\\
+$\rho_e$ & Tỷ lệ năng lực cạnh đã đặt tại bước khởi hành trong quy tắc M3.\\
+$\rho_v$ & Tỷ lệ sức chứa nút đích đã đặt tại bước đến trong quy tắc M3.\\
+$\alpha$ & Hệ số phạt của M3, khảo sát các giá trị 1, 2, 4 và 8.\\
+$\operatorname{lower}(v)$ & Cận dưới thời gian từ $v$ tới một EXIT theo bước, bỏ qua nguy cơ và hàng đợi.\\
+$\operatorname{lower}_{safe}$ & Thời gian đường còn lại có xét mốc nguy cơ, chưa xét hàng đợi.\\
+$F(K),F^*$ & Luồng cực đại tới hạn $K$ và lượng thoát tối đa tại hạn cuối.\\
+$K^*$ & Horizon nhỏ nhất còn đạt lượng thoát $F^*$.\\
+$p(v)$ & Thế đỉnh dùng trong thuật toán luồng chi phí nhỏ nhất.\\
+$c^{\prime}(u,v)$ & Chi phí giảm: $c(u,v)+p(u)-p(v)$.\\
+$P$ & Số pha đường ngắn nhất thành công trong tối ưu chi phí.\\
+$r_i,s_i$ & Thời điểm khởi hành sớm nhất vào cạnh lát cắt $i$ và thời lượng tối thiểu từ đầu ra của cạnh đến EXIT, theo bước.\\
+\end{longtable}\endgroup
+
+\clearpage\appendixtables{C}\section*{PHỤ LỤC C. DẤU VẾT DỮ LIỆU VÀ LỊCH}
+\addcontentsline{toc}{section}{Phụ lục C. Dấu vết dữ liệu và lịch}
+Tệp \texttt{source\_manifest.json} xác định phiên bản mô hình, số nút/cạnh và bộ kết quả. Bảng trình bày 12 ký tự đầu của mã băm SHA-256; chuỗi đầy đủ được lưu trong bản ghi thực nghiệm. Các phương pháp trong cùng kịch bản có chung cấu hình đầu vào, tạo điều kiện đối chiếu có kiểm soát.
+\bang{hashes}{Dấu vết đầu vào của các kịch bản chính}
+\noindent\textbf{Bản ghi nhóm trích xuất từ lịch M4 không sự cố:}
+\lstinputlisting{data/journey_example.json}
+Sự kiện thoát của nhóm phòng tầng 1 ở ví dụ trùng bước đến cửa. Các tệp đối chiếu gồm:
+\begin{itemize}
+\item \texttt{comparison.json} và \texttt{comparison.csv}: 16 bản ghi chỉ số của đợt chính.
+\item \texttt{sensitivity.json}: năm cấu hình của hệ con tầng 1.
+\item \texttt{assumptions.json}: nguồn và giả định mô hình.
+\item \texttt{ground\_floor\_metrics.json}: kết quả hệ con 180 người tầng 1.
+\end{itemize}
+Các thực nghiệm bổ sung lưu riêng cấu hình, phân bố dân số, kết quả kiểm chứng và lịch nén; các lượt đo lặp lưu chỉ số từng lượt cùng số pha. Kiểm chứng được thực hiện bằng phát lại lịch và tái dựng mức sử dụng tài nguyên. Mã băm phục vụ truy xuất cấu hình; bảng và hình phục vụ trình bày kết quả.

@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "time_step_seconds": 5,
+    "walking_speed_m_s": 1.2,
+    "stair_speed_m_s": 0.7,
+    "interfloor_path_m": 12.0,
+    "specific_flow_people_m_s": 1.3,
+    "assumed_room_door_width_m": 1.2,
+    "assumed_stair_usable_width_m": 1.5,
+    "corridor_width_m": 2.0,
+    "corridor_lane_width_m": 1.0,
+    "room_depth_m": 8.8,
+    "stair_footprint_width_m_from_image": 5.0,
+    "corridor_node_storage": 24,
+    "lobby_node_storage": 30,
+    "stair_node_storage": 36,
+    "fire_propagation_m_s": 0.03,
+    "smoke_propagation_m_s": 0.15,
+    "smoke_upstairs_seconds": 25.0,
+    "smoke_downstairs_seconds": 45.0,
+    "duration_seconds": 900,
+    "seed": 2026
+  },
+  "source": "Latest user-provided diagram, 2026-10-24; not independently surveyed",
+  "excluded": [
+    "toilets near core 2; no nodes, occupancy or extra pass-through routes"
+  ],
+  "retained": [
+    "schematic lobby areas of both stair cores"
+  ],
+  "confirmed_by_user": [
+    "Ground-floor corridor has no protective barrier and opens outdoors; crossing any ground-room door is immediate evacuation.",
+    "Upper-floor occupants evacuate when they reach the open ground corridor from either stair lobby; EXIT1/EXIT2 label those areas, not extra doors."
+  ],
+  "from_image": [
+    "room ordering",
+    "room widths",
+    "8.8m depth",
+    "occupancy maxima",
+    "2m corridor",
+    "5m core footprint",
+    "door count convention"
+  ],
+  "not_measured": [
+    "exact room door coordinates/clear widths",
+    "usable stair width",
+    "inter-floor travel distance",
+    "actual attendance",
+    "walking/flow/hazard speeds",
+    "node holding capacities"
+  ],
+  "ground_exit_model": "Seven ground-room doors are absorbing exits with the room-door capacity. Two stair discharge areas are absorbing exits with nonbinding capacity 1360; actual discharge is bounded by the stair/lobby access edge. No extra outside gate, gate width or exit travel delay.",
+  "coordinate_system": "Each floor uses local x from the left edge; unequal lengths and core offsets in the schematic are not a surveyed 3D alignment.",
+  "flow_model": "Two fixed 1m directional corridor lanes; descending-only stairs. Transit stores at most d departure cohorts. Not a certified building evacuation plan.",
+  "maximum_people": 1360
+}

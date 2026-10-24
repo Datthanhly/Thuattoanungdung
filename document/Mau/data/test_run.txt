@@ -1,0 +1,5 @@
+Verification performed on 2026-10-24 (Asia/Saigon).
+Command: python -m pytest -q
+Actual result after adding baseline and solver instrumentation: 48 passed in 11.74s
+Includes 25 parametrized NetworkX flow oracle cases and three extension tests.
+The 46 additional experimental runs are not extra pytest cases; all 46 independent schedule validators passed.

@@ -1,0 +1,3 @@
+{"id": "G00027", "source": "R101", "count": 7, 
+ "actions": [{"kind": "MOVE", "source": "R101", "target": "D101_1", "depart": 0, "arrive": 1, "edge_id": "R101__D101_1"}], 
+ "exit_node": "D101_1", "exit_step": 1}

@@ -1,0 +1,13 @@
+{
+  "completed_runs": 46,
+  "solver_sha256": "daa84f003692714ff48ff66b118f42ca48dfe7d027f820e39e4d6d996477b436",
+  "checks": [
+    "46 actual runs",
+    "all independent validators valid",
+    "all durations 900 seconds",
+    "15 population allocations reproduced from seed",
+    "5 identical M4 objective values",
+    "M3 alpha=4 reproduces primary benchmark",
+    "6 full-building sensitivities complete"
+  ]
+}

@@ -1,0 +1,128 @@
+\clearpage\section{THỰC NGHIỆM, KẾT QUẢ VÀ THẢO LUẬN}
+\subsection{Thiết lập thực nghiệm và hệ chỉ số}
+Thực nghiệm chính gồm bốn phương pháp M1--M4 và bốn kịch bản, tạo thành 16 tổ hợp. Các tổ hợp dùng cùng mặt bằng, dân số đầy tải 1.360 người, bước thời gian 5 s và thời hạn 900 s. Bộ chính được giữ cố định; các thực nghiệm bổ sung về đối chứng, mức tải, thời gian tính toán và độ nhạy được lưu tách biệt.
+
+\begin{table}[htbp]\centering\caption{Các kịch bản trong thiết kế thực nghiệm}
+\small\begin{tabularx}{\linewidth}{P{2.8cm}X}\toprule
+Kịch bản & Điều kiện nguy cơ\\\midrule
+Không sự cố & Không có nguồn cháy, khói hoặc vùng thoát bị khóa.\\
+Khói phòng 403 & Khói tại R403 từ 120 s; cháy tại cùng vị trí từ 180 s.\\
+Khói cầu thang & Khói tại thang 1 tầng 4 từ 90 s, sau đó lan theo đồ thị nguy cơ.\\
+Khóa vùng thoát & Vùng tiếp cận EXIT1 bị khóa từ 120 s; cửa phòng tầng 1 và EXIT2 vẫn mở.\\\bottomrule
+\end{tabularx}\end{table}
+
+Lượng thoát và tỷ lệ thoát được đánh giá trước thời gian. Makespan chỉ xác định khi toàn bộ dân số thoát; ``Thoát cuối'' là thời điểm thoát muộn nhất trên tập người đã thoát. Trung bình thời điểm thoát cũng được tính trên tập này. Vì vậy, trung bình của hai phương pháp có lượng thoát khác nhau không được xem là so sánh trên cùng dân số.
+
+\begin{table}[htbp]\centering
+\caption[Kết quả 16 tổ hợp phương pháp--kịch bản]{Kết quả 16 tổ hợp. Các cột thời gian tính bằng giây; TB: trung bình thời điểm thoát trên tập đã thoát; Giải: thời gian tính toán bộ giải. Dấu -- ở Hoàn tất nghĩa là còn người chưa thoát. In đậm lượng thoát cao nhất, thời gian tốt nhất trong các phương pháp đạt cùng lượng thoát cao nhất và thời gian giải nhỏ nhất.}
+\label{tab:allresults}\input{tables/results_all}\end{table}
+
+Các giá trị thời gian giải ở bảng tổng hợp là phép đo đơn của bộ chính, không phải trung bình nhiều lần. Phần đo lặp M4 được báo cáo riêng. Không có phép đo đỉnh bộ nhớ trong đợt chính; các giá trị thiếu không được thay bằng 0 MB.
+
+\topic{Không sự cố: thời gian hoàn tất và phân bổ tải}
+\hinh[.98]{safe_comparison.pdf}{Số người thoát tích lũy khi không có sự cố. M1 và M2 trùng nhau, được phân biệt bằng nét liền và nét đứt.}
+M4 hoàn tất ở 390 s, so với 500 s của M1 và M2; mức giảm là 22\%. Trung bình thời điểm thoát giảm từ 216,30 s xuống 199,25 s. Khi không có nguy cơ thay đổi, việc tái tính tuyến của M2 trả lại cùng lựa chọn ngắn nhất; hai phương pháp còn dùng cùng thứ tự phục vụ và chính sách đặt chỗ, nên các đường cong trùng nhau trong tổ hợp này.
+
+Trong 1.180 người từ tầng trên, M1 phân bổ 400 người qua thang 1 và 780 người qua thang 2; M4 phân bổ 586 và 594 người. Dân số 180 người tầng 1 thoát tại cửa phòng. Sự phân bố gần cân bằng làm giảm tình trạng một thang còn tải lớn trong khi năng lực thang kia không được khai thác đầy đủ.
+
+Đối chứng M1E chia đều 590 người cho mỗi thang và hoàn tất ở 395 s. Khoảng cách với M4 chỉ còn 5 s, tương ứng khoảng 1,27\% so với M1E. Do đó, ở kịch bản không sự cố, cân bằng tải giải thích phần lớn chênh lệch giữa M1 và M4. Kết quả 22\% không được diễn giải như lợi ích riêng của mọi thành phần tối ưu toàn cục.
+
+\subsubsection{Năng lực thang và cận dưới theo lát cắt}
+Mỗi cạnh xuống thang có năng lực
+\begin{equation}U_e=\lfloor1{,}5\times1{,}3\times5\rfloor=9\quad\text{người/bước}.\end{equation}
+Hai cạnh từ tầng 2 xuống tầng 1 tạo một lát cắt mà toàn bộ 1.180 người tầng trên phải đi qua. Nếu bỏ thời gian tiếp cận và rời thang, cận thô chỉ là $5\lceil1.180/18\rceil=330$ s. Cận này chưa tính thời điểm dòng đầu tiên có thể tới lát cắt.
+
+Gọi $r_i$ là bước khởi hành sớm nhất vào cạnh cắt $i$, $d_i$ là thời lượng cạnh và $s_i$ là thời lượng tự do từ đầu ra đến EXIT. Mọi lịch hoàn tất tại bước $K$ phải thỏa mãn
+\begin{equation}N_{\mathrm{trên}}\le\sum_{i=1}^{2}U_i\max\{0,K-r_i-d_i-s_i+1\}.\label{eq:cutbound}\end{equation}
+Đường ngắn nhất không hàng đợi cho $r_1=6$, $r_2=7$, $d_i=4$ và $s_i=2$. Tại $K=77$ (385 s), vế phải chỉ bằng $9(66+65)=1.179$, thiếu một suất so với 1.180 người. Tại $K=78$ (390 s), vế phải là 1.197. Vì M4 có lịch khả thi hoàn tất ở 390 s, cận dưới này đồng thời xác nhận thời gian hoàn tất tối ưu của kịch bản không sự cố trong mô hình rời rạc.
+
+\bang{cut_bounds}{Cận dưới theo từng lát cắt ngang giữa hai tầng, không sự cố}
+Các cận dùng thời gian tiếp cận sớm nhất và cho phép sử dụng trọn năng lực các bước sau đó, nên mang tính lạc quan. Chúng không giả định mọi nguồn có thể cùng tới thang sớm; điều này bảo đảm chiều của bất đẳng thức cận dưới.
+
+\hinh{stair_heatmap.pdf}{Heatmap năng lực vào cạnh thang của M1 và M4 khi không sự cố. Mỗi ô là lượng khởi hành chia cho 9; trục dọc chỉ tầng và cụm thang.}
+Heatmap thể hiện thời điểm từng đoạn thang được sử dụng, bổ sung thông tin mà đường cong tổng không biểu diễn. Phân bố tải cuối cùng gần đều chưa đủ bảo đảm tối ưu; vị trí hàng đợi và thời điểm đưa người vào thang còn ảnh hưởng phần đuôi của lịch. Khoảng cách 5 s giữa M1E và M4 là một ví dụ.
+
+\topic{Khói tại phòng 403: hiệu quả về lượng người thoát}
+\hinh[.98]{smoke_comparison.pdf}{Số người thoát tích lũy khi khói phát sinh tại phòng 403; các vạch đứng đánh dấu nguồn khói và cháy.}
+M1, M2, M3 và M4 lần lượt đạt 1.055, 1.217, 1.212 và 1.360 người thoát. M4 hoàn tất trong 425 s, tăng 305 người so với M1 và 143 người so với M2. Lượng thoát là chỉ số ưu tiên khi các phương pháp đối chứng chưa hoàn tất.
+
+M2 và M4 cùng biết lịch nguy cơ. M2 cập nhật tuyến ở vị trí hiện tại rồi cam kết từng hành động; M4 phối hợp năng lực trên toàn lịch. Khác biệt nằm ở mức độ điều phối giữa các nguồn, không nằm ở việc chỉ M4 có thông tin nguy cơ tương lai.
+
+Trung bình 159,43 s của M1 nhỏ hơn 200,74 s của M4, nhưng M1 còn 305 người chưa thoát. Tập được tính trung bình của M1 loại các trường hợp chưa thể thoát hoặc thoát muộn nếu được tiếp tục phục vụ. Do đó, nhận xét về thời gian phải đi kèm số người thoát; không thể kết luận M1 tốt hơn chỉ từ trung bình nhỏ hơn.
+
+\topic{Khói tại cầu thang: bị chặn bởi nguy cơ}
+\hinh[.98]{stair_block_comparison.pdf}{Số người thoát tích lũy khi nguy cơ lan từ thang 1 tầng 4; đường ngang chỉ tổng dân số 1.360.}
+M4 đạt 1.248 người, tương ứng 91,76\%; còn 112 người chưa thoát. M1 và M2 cùng đạt 1.070; M3 đạt 1.053. Thời điểm thoát cuối của M4 là 530 s, nhưng makespan toàn dân số không xác định. Cột Thoát cuối trong bảng tổng hợp tách rõ hai đại lượng này.
+
+M1 và M2 cùng đưa 138 người qua thang 1, 752 qua thang 2 và 180 qua cửa tầng 1. Tuy nhiên, lịch và phân bố nguồn khác nhau: riêng R404, M1 đưa được 17 người còn M2 đưa đủ 40. Trùng chỉ số tổng hợp vì vậy không có nghĩa hai phương pháp chọn cùng tuyến hoặc cùng tập người; thay đổi nguồn được phục vụ vẫn có thể giữ nguyên tổng lưu lượng qua các vùng thoát.
+
+\bang{unserved}{Phân bố 112 người chưa được sơ tán trong lịch M4 khói cầu thang}
+Tập còn lại được xác định bằng dân số nguồn trừ tổng số người của các hành trình đã đến EXIT. Theo cách phân rã hiện tại, những người không được gán đường đi tiếp tục ở nguồn; danh tính cá nhân không được mô hình hóa. Bảng mô tả một nghiệm tối ưu về lượng thoát, không khẳng định mọi nghiệm tối ưu phải có cùng phân bố người còn lại theo phòng.
+
+Nguy cơ làm mất các trạng thái hoặc cạnh TEN sau mốc đóng. Đường đi dài hơn chưa chắc tồn tại an toàn; tăng horizon không khôi phục những trạng thái đã bị loại. Đó là cơ chế khiến bộ giải vẫn còn 112 người sau thời hạn 900 s. Chỉ số phơi nhiễm được lưu riêng và không được đồng nhất với thương vong.
+
+\topic{Mất khả năng tiếp cận vùng thoát từ thang tầng 1}
+\hinh[.98]{exit_block_comparison.pdf}{Số người thoát tích lũy khi EXIT1 không thể tiếp cận từ 120 s; các cửa tầng 1 và EXIT2 vẫn mở.}
+M2 và M4 cùng hoàn tất ở 665 s. Trung bình M4 là 298,33 s, thấp hơn 301,33 s của M2. M1 đạt 1.056; M3 đạt 1.359. Lịch M4 phân bổ 96 người qua thang 1 trước mốc khóa, 1.084 qua thang 2 và 180 qua cửa phòng tầng 1, bảo toàn tổng 1.360.
+
+\subsubsection{Truy vết trường hợp M3 còn một người}
+Người chưa thoát của M3 xuất phát từ R405. Lịch ghi nhận người này tới nút thang tầng 1 của cụm 1 ở 95 s, đi sang sảnh lúc 100 s rồi quay lại thang lúc 105 s. Sau đó chỉ còn các hành động chờ đến 900 s. M3 cho phép bước lùi có điểm cục bộ tốt hơn mà không yêu cầu khoảng cách đến EXIT giảm đơn điệu; việc chấm điểm và đặt chỗ không bảo đảm khả thi cho toàn bộ phần đường còn lại.
+
+Khoảng thời gian trước khi EXIT1 đóng bị tiêu hao bởi quyết định cục bộ và hàng đợi. Khi không còn tuyến kịp mốc 120 s, người ở nhánh này không có cạnh đi lên để đổi sang cụm thang kia. Vì vậy, sai khác một người phản ánh một quyết định lịch cụ thể của heuristic, không phải mất dân số do lỗi thống kê. Đây là lý do cần kiểm tra lịch hành động thay vì chỉ so sánh bảng chỉ số.
+
+\topic{Đối chứng bổ sung và chi phí tính toán}
+\hinh{aggregate.pdf}{Tổng hợp bộ chính: (a) tỷ lệ thoát; (b) thời gian giải từng tổ hợp. Giá trị được ghi trên cột; đây là phép đo đơn.}
+\subsubsection{Đối chứng chia đều hai thang và hệ số M3}
+\IfFileExists{tables/balanced.tex}{\bang{balanced}{Đối chứng M1E: tuyến ngắn nhất sau khi chia đều hai thang; dấu -- là chưa hoàn tất}}{}
+M1E kiểm soát tác động của chia tải tĩnh, nhưng không cập nhật đích được gán khi nguy cơ xuất hiện. Do đó, kết quả gần M4 trong không sự cố không bảo đảm kết quả tương tự ở ba kịch bản còn lại. Cả ưu thế và hạn chế phải được xét theo từng kịch bản.
+
+\IfFileExists{tables/m3_ablation.tex}{\bang{m3_ablation}{Khảo sát M3 theo hệ số phạt; mỗi ô là số người thoát / thời gian hoàn tất (s), dấu -- là chưa hoàn tất}}{}
+Thay đổi hệ số có thể làm thay đổi thứ tự chọn bước, vị trí hàng đợi và số lần đi lùi. Vì vậy, tăng phạt tải không tạo quan hệ đơn điệu với makespan hoặc lượng thoát. Khảo sát này là phép kiểm tra độ nhạy của heuristic, không phải tối ưu siêu tham số trên một tập kiểm định độc lập.
+
+\subsubsection{Đo lặp M4 và thời gian theo giai đoạn}
+Các lượt đo bổ sung dùng cùng kịch bản không sự cố, đầy tải, bước 5 s và hạn 900 s. Bộ giải được gọi tuần tự, không bật tracemalloc; các tiến trình nền của máy không được cô lập. Cấu hình máy và số liệu từng lượt được lưu cùng kết quả; thời gian bên dưới không trộn với phép đo đơn của bộ chính.
+\IfFileExists{tables/runtime_repeats.tex}{\bang{runtime_repeats}{Các lượt đo M4; $P$ là số pha chi phí, Tăng luồng là số đường tăng trong các pha chi phí}}{}
+\IfFileExists{data/runtime_comment.tex}{\input{data/runtime_comment}}{}
+\IfFileExists{figures/runtime_stages.pdf}{\hinh{runtime_stages.pdf}{Thời gian M4 theo giai đoạn, trung bình trên các lượt đo bổ sung.}}{}
+Thời gian dựng mạng gồm các mạng dò và mạng tối ưu cuối. Thời gian dò luồng cực đại bao gồm tất cả phép dò horizon; thời gian luồng chi phí nhỏ nhất gồm các pha đường ngắn nhất và luồng chặn. Phần phân rã và kiểm tra được ghi riêng. Tổng các giai đoạn gần thời gian solver, với sai khác nhỏ do khởi tạo và điều khiển.
+
+\bang{ten}{Quy mô mạng M4 ở giai đoạn tối ưu chi phí của bộ chính}
+Horizon dài hơn thường tạo mạng lớn hơn, nhưng số nút cuối chưa giải thích toàn bộ thời gian vì còn các mạng trung gian và số pha. Phiên bản hiện tại dựng mạng độc lập cho mỗi phép dò để duy trì trạng thái dư rõ ràng. Tái sử dụng luồng là hướng cải tiến; việc chuyển giữa horizon có cả tăng và giảm đòi hỏi kiểm soát các phần luồng không còn hợp lệ.
+
+\topic{Độ nhạy toàn tòa nhà và biến thiên mức dân số}
+\subsubsection{Bề rộng, tốc độ thang và bước thời gian}
+Khảo sát toàn tòa cố định dân số 1.360 và kịch bản không sự cố, với thời hạn 900 s. Mỗi cấu hình thay một yếu tố so với cơ sở: bề rộng thang, tốc độ thang hoặc bước thời gian. Hình học phòng, sức chứa nút và các tham số còn lại được giữ cố định. Đây là các đầu vào tính toán, không phải phương án cải tạo công trình đã được khảo sát.
+\IfFileExists{tables/whole_sensitivity.tex}{\bang{whole_sensitivity}{Độ nhạy M4 trên toàn tòa nhà; hàng đầu là cấu hình cơ sở}}{}
+Tăng bề rộng làm tăng năng lực vào thang qua phép lấy phần nguyên. Tăng tốc độ làm giảm số bước di chuyển nhưng không trực tiếp tăng năng lực khởi hành. Vì vậy, hai thay đổi tác động lên những ràng buộc khác nhau và không được thay thế cho nhau trong diễn giải.
+
+Trong khoảng khảo sát, bề rộng 1,2--1,8 m cho thời gian hoàn tất 485--335 s, còn tốc độ 0,5--0,9 m/s cho 395--385 s. Chênh lệch cho thấy cấu hình đầy tải nhạy với năng lực vào thang hơn với thời lượng đi tự do trên thang. Với các bước 2, 5 và 10 s, thời gian lần lượt là 440, 390 và 400 s; xu hướng không đơn điệu cần được giải thích qua cả hai phép làm tròn dưới đây.
+
+\subsubsection{Làm tròn năng lực và thời gian}
+Với thang cơ sở, năng lực liên tục quy đổi là $1{,}5\times1{,}3\times5=9{,}75$ người/bước; lấy phần nguyên thành 9 làm giảm khoảng $7{,}69\%$. Với cửa, $1{,}2\times1{,}3\times5=7{,}8$ thành 7, giảm khoảng $10{,}26\%$. Mức giảm này đủ lớn để ảnh hưởng các kết luận về thời gian.
+
+Ở bước 2 s, thang cho $\lfloor3{,}9\rfloor=3$ người, tương ứng 1,5 người/s, thấp hơn mức 1,8 người/s của bước 5 s và 1,9 người/s của bước 10 s. Cùng lúc, thời lượng cạnh được làm tròn lên. Do đó, biến thiên theo $\Delta t$ trộn sai số thời lượng và sai số năng lực; không thể xem bước nhỏ hơn là một phép tinh lưới thuần túy của cùng mô hình liên tục. Một mô hình bảo toàn phần lẻ tích lũy cần được triển khai và kiểm chứng riêng.
+
+Khảo sát hệ con tầng 1 được giữ như phép kiểm tra cơ chế cửa, tách khỏi khảo sát toàn tòa:
+\bang{sensitivity}{Độ nhạy hệ con 180 người tầng 1; TB tính trên tập đã thoát}
+Ở bước 5 s, bề rộng cửa 0,9; 1,2 và 1,5 m cho thời gian hoàn tất 45, 35 và 30 s. Các kết quả này không đại diện cho tác động thay đổi cửa khi hệ thống cầu thang đang chịu tải toàn tòa.
+
+\subsubsection{Mức tải và seed phân bố dân số}
+Các mức tải 30\%, 50\% và 70\% tương ứng 408, 680 và 952 người; thời hạn khảo sát là 900 s. Tổng dân số được giữ đúng theo mức tải; seed thay đổi cách phân bổ người vào các nguồn phòng, có chặn theo sức chứa. Các seed từ 2026 đến 2030 tạo năm phân bố ở mỗi mức. Cách làm này khác với nhân đồng đều dân số từng phòng, vốn không sử dụng seed.
+\IfFileExists{tables/population.tex}{\bang{population}{Kết quả M4 theo mức tải: trung bình $\pm$ SD mẫu qua các seed phân bố}}{}
+SD ở đây mô tả biến thiên do phân bố nguồn, không mô tả bất định của tốc độ, hành vi hay dữ liệu nguy cơ. Các phép đo thời gian mô phỏng không được trộn với thời gian tính toán. Mỗi đầu vào được kiểm tra lịch và bảo toàn dân số trước khi tổng hợp.
+
+\topic{Giới hạn nghiên cứu và kết luận}
+\subsubsection{Dữ liệu và miền áp dụng}
+Phòng ghép 601-602 có sức chứa 80 người trên chiều dài 9,6 m, còn 705 có 40 người với cùng chiều dài. Đây là hai giá trị trong dữ liệu nguồn theo phân loại khu ghép và phòng đơn, không phải suy ra bằng cùng một định mức diện tích. Nghiên cứu giữ nguyên chúng để truy xuất dữ liệu; cần kiểm tra hồ sơ sử dụng phòng nếu muốn thay bằng dân số thực tế. Chiều sâu 8,8 m và các tọa độ cục bộ không tạo thành một khảo sát ba chiều.
+
+Suất thông hành, tốc độ, độ trễ khói và sức chứa 24/30/36 là tham số minh họa đã phân loại trong bảng cấu hình. Chúng chưa mô tả phản ứng con người, khác biệt khả năng vận động, liều khói hoặc tương tác mật độ liên tục. Nguy cơ là lịch sự kiện biết trước; mô hình chưa đánh giá sai số dự báo hay cảm biến. Chỉ số thoát không được diễn giải thành chỉ số sống sót.
+
+\subsubsection{Thiết kế đối chứng và phép đo}
+Các đối chứng dùng đặt chỗ bảo thủ và thứ tự ID cố định. M1E cho thấy cân bằng tải tĩnh đã thu hẹp đáng kể khoảng cách trong không sự cố; khảo sát M3 cho thấy hệ số phạt ảnh hưởng mạnh đến lịch. Kết luận cần gắn với chính sách cụ thể này, không suy rộng thành tính trội đối với mọi heuristic.
+
+Đo lặp trên một máy cung cấp trung bình và SD cho cấu hình hiện tại, nhưng không thay cho đánh giá mở rộng trên nhiều nền tảng. Lịch, số pha và thời gian giai đoạn được lưu để hỗ trợ tái lập. Chưa có đối chiếu OR-Tools hoặc cơ chế tái sử dụng luồng giữa các phép dò; các nội dung đó không được báo cáo như kết quả đã thực hiện.
+
+\subsubsection{Kết luận}
+Mô hình tích hợp biểu diễn không gian, nguy cơ và năng lực theo thời gian trong một lịch kiểm chứng được. Với không sự cố, lát cắt cầu thang cho cận dưới 390 s, trùng thời gian của lịch M4. Khi có khói cầu thang, lịch tối ưu lượng thoát còn 112 người được truy xuất theo nguồn. Truy vết trường hợp M3 còn một người cho thấy vai trò của quyết định lùi và mốc đóng trong heuristic cục bộ.
+
+Các kết quả hỗ trợ phân tích thuật toán và nút thắt trong miền giả định đã xác định. Ứng dụng vận hành cần dữ liệu hiện trường, kiểm tra độ phân giải, đánh giá bất định và thẩm định an toàn phù hợp. Những yêu cầu này được tập trung tại đây để phân biệt bằng chứng tính toán với mức độ hiệu chỉnh thực tế của mô hình.

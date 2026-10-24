@@ -1,0 +1,183 @@
+\clearpage\section{THIẾT KẾ VÀ PHÂN TÍCH THUẬT TOÁN}
+\subsection{Dijkstra và vai trò giới hạn của A*}
+Dijkstra tìm đường có tổng trọng số nhỏ nhất khi trọng số không âm \cite{dijkstra}. Trong chương trình, đồ thị tìm tuyến dùng thời lượng cạnh theo bước; nhãn khoảng cách lưu chi phí tốt nhất hiện biết và hàng đợi ưu tiên chọn nhãn nhỏ nhất để mở rộng. Mỗi bản ghi cha lưu cả đỉnh trước và mã cạnh, nhờ đó có thể khôi phục một tuyến gồm các cạnh xác định.
+
+\begin{algorithm}[htbp]\caption{Tìm tuyến ngắn nhất tới một tập đích}\label{alg:1}
+\begin{lstlisting}[frame=none]
+DIJKSTRA(G, source, exits):
+    dist[source] = 0; heap = [(0, source)]
+    while heap is not empty:
+        (d,u) = pop_min(heap)
+        if d != dist[u]: continue
+        if u in exits: return reconstruct(parent,u)
+        for edge (u,v,w) in G[u]:
+            if d+w < dist[v]:
+                dist[v] = d+w
+                parent[v] = (u, edge.id)
+                push(heap,(dist[v],v))
+    return NO_PATH
+\end{lstlisting}
+\end{algorithm}
+Một đỉnh có thể có nhiều bản ghi trong heap. Bản ghi cũ bị bỏ bằng phép so sánh với nhãn hiện tại, tránh phải cài đặt thao tác giảm khóa. Cách này đơn giản và vẫn giữ giới hạn chuẩn theo số lần nới lỏng thành công.
+
+Giao diện hỗ trợ A* với heuristic không vượt chi phí còn lại và bằng 0 tại đích. Thực nghiệm dùng $h=0$, tương ứng Dijkstra; A* được kiểm thử ở mức hàm.
+
+Bài toán đường đi đơn tối ưu tổng trọng số mà chưa phân bổ năng lực giữa các nguồn. Trong M1--M3, tuyến được kết hợp với bộ kiểm tra sức chứa khi cam kết hành động. Sự phân tách giữa lựa chọn tuyến và khả năng phục vụ là cơ sở phân biệt các đối chứng cục bộ với mô hình điều phối toàn cục.
+
+\topic{Dijkstra đa nguồn và tuyến phụ thuộc thời điểm}
+Thời điểm nguy cơ đến các nút được xác định bằng khởi tạo đa nguồn. Heap chứa toàn bộ nguồn sự cố cùng mốc bắt đầu tương ứng; mỗi nhãn nút giữ thời điểm đến nhỏ nhất. Một nguồn khởi phát muộn vẫn có thể quyết định nhãn của vùng lân cận khi độ trễ truyền từ các nguồn khác lớn hơn.
+
+\begin{algorithm}[htbp]\caption{Lan truyền thời điểm sự kiện}\label{alg:2}
+\begin{lstlisting}[frame=none]
+PROPAGATE(graph, sources):
+    time[v] = infinity for all v
+    for (v,start) in sources:
+        if start < time[v]:
+            time[v] = start; push(heap,(start,v))
+    while heap is not empty:
+        (t,u) = pop_min(heap)
+        if t != time[u]: continue
+        for (v,delay) in graph[u]:
+            if t+delay < time[v]:
+                time[v] = t+delay
+                push(heap,(time[v],v))
+    return time
+\end{lstlisting}
+\end{algorithm}
+Với độ trễ $a\to b$ bằng 10 s và $b\to c$ bằng 5 s, hai nguồn bắt đầu tại $a$ lúc 20 s và tại $b$ lúc 7 s cho nhãn $c$ bằng 12 s. Nguồn $b$ xác lập nhãn sớm hơn giá trị 35 s truyền từ $a$. Cấu hình này được sử dụng như một ca kiểm thử xác định của hàm đa nguồn.
+
+Hàm tìm đường an toàn dùng nhãn là bước đến tuyệt đối. Khi xét cạnh từ $u$ ở bước $k$, nó tính $k+d_e$ rồi kiểm tra an toàn lúc đến và trong chuyến đi. Việc đến sớm hơn là không bất lợi trong mô hình có mốc đóng đơn điệu: không có cửa mở lại hoặc lợi ích do cố ý đến muộn để bắt một khoảng mở tương lai.
+
+Kết quả của hàm vẫn chưa xét hàng đợi. M2 gọi lại hàm tại vị trí hiện tại, trong khi M4 đưa cả nguy cơ lẫn năng lực vào cùng một mạng thời gian để điều phối toàn cục.
+
+\topic{Dinic, mạng dư và luồng cực đại}
+Thuật toán Dinic \cite{dinic} sử dụng đồ thị mức và luồng chặn. Mỗi cạnh thuận có một cạnh dư ngược tương ứng. Phép tăng $a$ đơn vị làm giảm dung lượng dư thuận và tăng dung lượng dư ngược cùng lượng $a$. Cấu trúc này cho phép hiệu chỉnh phân bổ luồng đã thiết lập ở các pha trước trong khi vẫn bảo toàn điều kiện cân bằng.
+
+\begin{algorithm}[htbp]\caption{Giải luồng cực đại bằng Dinic}\label{alg:3}
+\begin{lstlisting}[frame=none]
+DINIC(network,s,t,limit):
+    flow = 0
+    while flow < limit:
+        level = BFS_on_positive_residual_arcs(s)
+        if t is unreachable: break
+        pointer[v] = 0 for every v
+        while an admissible s-t path exists:
+            path = iterative_DFS_using_level_and_pointer()
+            a = min(limit-flow, bottleneck(path))
+            push_on_path_and_reverse_arcs(path,a)
+            flow += a
+    return flow
+\end{lstlisting}
+\end{algorithm}
+BFS xây đồ thị mức; DFS chỉ đi sang mức kế tiếp. Mỗi đỉnh có con trỏ để không quét lại những cạnh đã xác định không còn dùng được trong pha. Khi không tăng được trong đồ thị mức, thuật toán dựng mức mới trên mạng dư hiện tại.
+
+DFS được viết lặp bằng stack. Điều này có ý nghĩa vì mạng thời gian có thể chứa đường đi dài hơn độ sâu đệ quy mặc định. Ca kiểm thử chuỗi 2.100 cạnh với năng lực 3 xác nhận chương trình không phụ thuộc tăng giới hạn đệ quy.
+
+Trên TEN đến hạn $K$, một đơn vị luồng tương ứng một người có chuỗi hành động hợp lệ. Khi không còn đường tăng, lượng gửi là luồng cực đại của mạng đã dựng.
+
+\topic{Min-Cost Flow với potentials và blocking flow}
+Sau khi cố định lượng cần gửi, cần chọn lịch có tổng thời điểm thoát nhỏ nhất. Cạnh thuận ban đầu có chi phí không âm, nhưng cạnh dư ngược có chi phí đối dấu. Vì vậy, không thể chạy Dijkstra trực tiếp trên chi phí gốc sau mọi lần tăng luồng.
+
+Phương pháp sử dụng potentials $p$ và chi phí giảm $c^{\prime}(u,v)=c(u,v)+p(u)-p(v)$ trong bài toán luồng chi phí nhỏ nhất \cite{mitflow}. Tính nhất quán của triển khai được đối chiếu với bộ giải tham chiếu trên các đồ thị nguyên quy mô nhỏ.
+\begin{algorithm}[htbp]\caption{Luồng chi phí nhỏ nhất với potentials và luồng chặn}\label{alg:4}
+\begin{lstlisting}[frame=none]
+MIN_COST(net,s,t,required):
+    potential[v] = 0; flow = cost = 0
+    while flow < required:
+        dist = DIJKSTRA_RESIDUAL(reduced_cost)
+        if dist[t] is infinity: break
+        for every reachable v:
+            potential[v] += dist[v]
+        a = DINIC_ON_ZERO_REDUCED_COST_ARCS(
+                s,t,required-flow)
+        cost += a*(potential[t]-potential[s])
+        flow += a
+    return flow,cost
+\end{lstlisting}
+\end{algorithm}
+Sau khi cập nhật potentials, mọi đường nguồn--đích chỉ gồm cạnh có chi phí giảm 0 có cùng chi phí gốc $p(t)-p(s)$. Thay vì chạy heap riêng cho từng nhóm nhỏ, chương trình gửi một blocking flow trên tập cạnh này và tính chi phí theo tổng lượng gửi được.
+
+Điều kiện đầu vào của hàm là chi phí thuận ban đầu không âm. Các cạnh ngược âm sinh trong mạng dư vẫn được phép; chương trình không tuyên bố hỗ trợ mọi mạng có chi phí âm ban đầu. Trong TEN, chi phí chỉ đặt ở cạnh thoát và bằng bước $k$, nên điều kiện khởi tạo potentials bằng 0 được thỏa mãn.
+
+\topic{Quy trình tối ưu M4 và cắt trạng thái hợp lệ}
+Quy trình M4 gồm ba giai đoạn liên tiếp: xác định lượng thoát tối đa, tìm horizon tối thiểu và tối ưu tổng thời điểm thoát. Mạng ở giai đoạn cuối được dựng độc lập với các phép dò trước để khởi tạo đúng dung lượng dư và chi phí tại horizon đã xác lập.
+\begin{algorithm}[htbp]\caption{Tối ưu ba mục tiêu M4 trên TEN}\label{alg:5}
+\begin{lstlisting}[frame=none]
+OPTIMIZE(building,hazards,occupancy,Kmax):
+    lower = reverse_shortest_distance_to_any_exit()
+    F = DINIC(TEN(Kmax,lower))
+    lo = 0; hi = Kmax
+    while lo < hi:
+        mid = floor((lo+hi)/2)
+        if DINIC(TEN(mid,lower)) >= F: hi = mid
+        else: lo = mid+1
+    net = TEN(lo,lower)
+    (value,cost) = MIN_COST(net,F)
+    assert value == F
+    schedule = DECOMPOSE(net)
+    assert VALIDATE(schedule)
+    return schedule
+\end{lstlisting}
+\end{algorithm}
+Cận dưới $\operatorname{lower}(v)$ là thời gian tới một EXIT khi bỏ qua hàng đợi và nguy cơ. Trạng thái $(v,k)$ bị cắt nếu $k+\operatorname{lower}(v)>K$. Một người không thể đi nhanh hơn đường tự do, nên phép cắt không loại lịch khả thi; nó chỉ tránh tạo trạng thái đã chắc chắn không kịp ra ngoài.
+
+\bang{probes}{Các lần dò max flow thực tế của M4, không sự cố}
+
+Bảng ghi các phép dò horizon: thời hạn 900 s tương ứng 180 bước; horizon hoàn tất tối ưu là 78 bước, tức 390 s.
+
+\topic{Phân rã luồng và lập luận bảo toàn ràng buộc}
+Mạng thuận tiến theo thời gian nên không có chu trình thời gian trong phần luồng dương được phân rã. Từ siêu nguồn, chọn các cạnh còn luồng đến siêu đích, lấy lượng nhỏ nhất trên đường làm kích thước nhóm, rồi trừ lượng đó khỏi các cạnh đã đi. Lặp lại đến khi không còn luồng từ nguồn.
+
+\begin{table}[htbp]\centering\caption{Ánh xạ thành phần mạng sang lịch hành động}
+\small\begin{tabularx}{\linewidth}{P{4cm}X}\toprule
+Thành phần mạng & Bản ghi sau giải mã\\\midrule
+Cạnh siêu nguồn--phòng & Nguồn của nhóm và số người.\\
+Cạnh nối hai mốc cùng nút & WAIT, từ bước $k$ tới $k+1$.\\
+Cạnh đi $u_k\to v_{k+d}$ & MOVE, mã cạnh và mốc đi/đến.\\
+Cạnh EXIT--siêu đích & Điểm thoát và bước thoát.\\\bottomrule
+\end{tabularx}\end{table}
+
+\begin{dinhly}Mỗi đường luồng đã giải mã tôn trọng giới hạn thời lượng và năng lực của TEN.\end{dinhly}
+\begin{proof}
+Mỗi cạnh di chuyển nối đúng hai mốc cách nhau $d_e$, nên thời lượng của MOVE đúng bằng số bước cạnh. Mọi lượng đi qua cạnh đó không vượt dung lượng $U_e$. Mọi lượng hiện diện tại cùng trạng thái đi qua cạnh tách nút dung lượng $B_v$. Phân rã chỉ chia luồng thành các đường và không làm tăng tổng luồng trên bất kỳ cạnh nào, vì vậy các giới hạn tiếp tục được giữ.
+\end{proof}
+
+Ngoài các bất biến của luồng, quá trình chuyển đổi nghiệm cần kiểm chứng metadata thời gian và sự kiện thoát. Bộ kiểm tra độc lập dựng lại mức sử dụng tài nguyên từ lịch hành động sau phân rã. Cách tiếp cận này tách bằng chứng khả thi của lịch khỏi cấu trúc dữ liệu mạng dư của bộ giải.
+
+Người không được chọn vào các đường sơ tán vẫn tồn tại tại nguồn. Phòng không có cạnh đi vào, nên số người ở lại không làm một luồng khác đi xuyên qua nguồn và chiếm chỗ sai. Khi nguồn mất an toàn, họ được báo phơi nhiễm riêng, không bị chuyển thành người đã thoát.
+
+\topic{Các phương pháp đối chứng và chính sách chia tải}
+M1--M4 có chung đồ thị, phân bố dân số, lịch nguy cơ và các giới hạn năng lực. Biến can thiệp trong so sánh là chiến lược lựa chọn tuyến và thời điểm cam kết di chuyển. Mọi phương pháp đều áp dụng cùng bộ kiểm tra khả thi và quy tắc ghi nhận phần dân số chưa thoát.
+
+\begin{table}[htbp]\centering\caption{Quy tắc ra quyết định của các phương pháp}
+\small\begin{tabularx}{\linewidth}{P{1cm}P{4.2cm}X}\toprule
+PP & Chọn tuyến & Xử lý năng lực\\\midrule
+M1 & Tuyến ngắn nhất ở thời điểm đầu, giữ cố định. & Chờ nếu cạnh kế tiếp không nhận được người.\\
+M2 & Tính lại tuyến an toàn tại vị trí, thời điểm hiện tại. & Chọn bước đầu tuyến mới rồi kiểm tra chỗ.\\
+M3 & Chấm điểm các bước khả thi và chọn tham lam. & Xét lượng đặt chỗ khi chấm điểm.\\
+M4 & Điều phối toàn cục trên TEN. & Năng lực là dung lượng trong bài toán luồng.\\
+M1E & Chia đều hai thang, giữ tuyến ngắn nhất đến đích đã gán. & Cùng chính sách đặt chỗ và chờ của M1.\\\bottomrule
+\end{tabularx}\end{table}
+Điểm M3 gồm thời lượng bước đang xét, thời gian đường còn lại và hai thành phần phạt tỷ lệ sử dụng cạnh, nút:
+\begin{equation}\operatorname{score}(e,k)=d_e+\operatorname{lower}_{safe}(v,k+d_e)+\alpha\rho_e+\alpha\rho_v.\end{equation}
+Ở đây $\rho_e$ là tỷ lệ năng lực cạnh đã đặt tại bước $k$; $\rho_v$ là tỷ lệ sức chứa nút đích đã đặt tại bước đến. Cấu hình chính dùng $\alpha=4$; khảo sát bổ sung xét $\alpha\in\{1,2,4,8\}$. M1E gán luân phiên từng người ở tầng trên cho EXIT1 và EXIT2, rồi tính tuyến ngắn nhất đến vùng thoát được gán; 180 người tầng 1 vẫn đi trực tiếp qua cửa phòng. Vì vậy, đối chứng này kiểm tra riêng lợi ích của cân bằng tải khi chưa tối ưu toàn cục.
+
+Các baseline phá hòa theo ID nguồn/người và đặt chỗ bảo thủ ở nút cho đến khi có lệnh rời được cam kết. Chính sách này bảo đảm lịch kiểm tra được nhưng có thể làm giảm hiệu quả. Vì vậy, kết quả so sánh vừa phản ánh khả năng điều phối toàn cục, vừa phản ánh những quy tắc cụ thể của bộ đối chứng đang cài đặt.
+
+\topic{Độ phức tạp, tính đúng đắn và giới hạn khẳng định}
+Đặt $n=|V|$, $m=|E|$, horizon $K$ và số pha chi phí của Min-Cost Flow là $P$. Quy mô TEN trước cắt có bậc $O(nK)$ nút, $O((n+m)K)$ cạnh. Giảm $K$ hoặc cắt trạng thái có thể tiết kiệm đáng kể tài nguyên nhưng không làm thay đổi bản chất tăng theo thời gian của mô hình.
+
+\begin{table}[htbp]\centering\caption{Các mức phân tích độ phức tạp}
+\small\begin{tabularx}{\linewidth}{P{4cm}X}\toprule
+Thành phần & Giới hạn và ý nghĩa\\\midrule
+Dijkstra với heap & $O((n+m)\log n)$ theo cách biểu diễn đồ thị.\\
+Dijkstra đa nguồn & Cùng bậc; thêm các nguồn vào khởi tạo.\\
+Dinic tổng quát & $O((n^{\prime})^2m^{\prime})$ trên mạng có $n^{\prime},m^{\prime}$.\\
+Dựng TEN & $O((n+m)K)$ trước các chi tiết truy cập.\\
+Tìm horizon & $O(\log(K+1))$ lần dò max flow sau lần dò hạn cuối.\\
+Min-Cost Flow & $P$ pha đường ngắn nhất và blocking flow; không đồng nhất với một lần Dinic.\\\bottomrule
+\end{tabularx}\end{table}
+
+Lập luận tính đúng đắn được tách thành các nghĩa vụ: đồ thị đúng dữ liệu; TEN đúng thời gian và năng lực; max flow cho lượng thoát tối đa; tính đơn điệu cho tìm kiếm nhị phân; chi phí cạnh thoát cho đúng mục tiêu; phân rã và validator giữ đúng lịch. Việc bỏ qua một nghĩa vụ có thể làm kết luận tổng thể sai dù một thuật toán con đã được cài đúng.
+
+Cơ sở lý thuyết của các thuật toán đường đi và mạng luồng được trình bày trong \cite{clrs}. Mô hình đoàn, điều kiện biên tầng 1 và thiết kế đối chứng được xác lập riêng cho trường hợp A4. Độ phức tạp mô tả bậc tăng theo quy mô; thời gian giải và mức sử dụng bộ nhớ cần được xác định bằng phép đo trên môi trường thực nghiệm cụ thể.

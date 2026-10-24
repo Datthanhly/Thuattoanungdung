@@ -1,0 +1,40 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.egg-info/
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+tmp/
+
+# Local credentials and editor state.
+.env
+.env.*
+!.env.example
+.vscode/
+
+# Published results use the current report; older generated artifacts stay local.
+/document/*
+!/document/Mau/
+/document/Mau/build/
+/document/Mau/extracts/
+/document/Mau/image/*
+!/document/Mau/image/Logo.png
+/output/pdf/*
+!/output/pdf/Bao_cao_Thuat_toan_ung_dung_N01.pdf
+!/output/pdf/A4_Evac_Source.zip
+*.lof
+*.lot
+*.synctex.gz
+
+# Raw reproducibility data is versioned in data/benchmarks/a4_open_ground.zip.
+/outputs/*
+!/outputs/a4_open_ground/
+/outputs/a4_open_ground/*
+!/outputs/a4_open_ground/a4_evacuation.gif
+!/outputs/a4_open_ground/a4_evacuation.playback.json
+!/outputs/a4_open_ground/a4_evacuation_preview.png
+!/outputs/a4_open_ground/a4_floorplan.png

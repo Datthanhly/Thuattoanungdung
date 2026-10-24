@@ -1,0 +1,10 @@
+{
+  "frame_ms": 600,
+  "end_hold_ms": 3000,
+  "simulation_step_seconds": 5,
+  "simulation_end_seconds": 390,
+  "frame_count": 79,
+  "playback_duration_ms": 49800,
+  "source_result": "D:\\Downloads\\lythanhdat\\Thuattoanungdung\\outputs\\a4_open_ground\\benchmark\\safe\\M4",
+  "input_sha256": "6bc45853e2fb3bdb7f4a77796748aa290875c67531a5e91c7cce75ca7ad0b549"
+}

@@ -1,0 +1,87 @@
+\documentclass[12pt,a4paper]{article}
+% XeLaTeX; giu le, co chu, logo, hai trang bia va header theo mau.
+\usepackage{fontspec}
+\usepackage{fix-cm}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\IfFontExistsTF{Arial}{\setsansfont{Arial}}{\setsansfont{TeX Gyre Heros}}
+\IfFontExistsTF{Consolas}{\setmonofont{Consolas}}{\setmonofont{Latin Modern Mono}}
+\usepackage[top=3.5cm,bottom=3cm,left=3.5cm,right=2cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,graphicx,float,booktabs,longtable,tabularx,array}
+\usepackage{caption,subcaption,fancyhdr,tikz,xcolor,xurl,listings,enumitem}
+\usepackage{needspace,icomma,algorithm}
+\floatname{algorithm}{Thuật toán}
+\numberwithin{algorithm}{section}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+\hypersetup{pdftitle={Tối ưu hóa sơ tán tòa nhà A4 bằng đồ thị động và mạng luồng theo thời gian},pdfauthor={Lý Thành Đạt; Đinh Đức Mạnh; Phạm Văn Đạt}}
+\renewcommand{\contentsname}{MỤC LỤC}
+\renewcommand{\listfigurename}{DANH MỤC HÌNH}
+\renewcommand{\listtablename}{DANH MỤC BẢNG}
+\renewcommand{\figurename}{Hình}
+\renewcommand{\tablename}{Bảng}
+\renewcommand{\lstlistingname}{Mã lệnh}
+\renewcommand{\refname}{TÀI LIỆU THAM KHẢO}
+\numberwithin{equation}{section}\numberwithin{figure}{section}\numberwithin{table}{section}
+\newtheorem{dinhly}{Mệnh đề}[section]
+\renewcommand{\proofname}{Chứng minh}
+\captionsetup{font=small,labelfont=bf,skip=7pt}
+\setlength{\headheight}{26pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\fontsize{11}{14}\selectfont\itshape Thuật toán ứng dụng - N01}
+\fancyhead[R]{\parbox[b]{8.4cm}{\raggedleft\fontsize{8}{10}\selectfont Hệ thống sơ tán thông minh trong trường đại học khi xảy ra cháy}}
+\fancyfoot[L]{\fontsize{10}{13}\selectfont Lớp K17 - KHMT}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\fontsize{10}{13}\selectfont Đại học Phenikaa}
+\renewcommand{\headrulewidth}{1.2pt}\renewcommand{\footrulewidth}{1.2pt}
+\setlength{\parindent}{1cm}\setlength{\parskip}{1pt}
+\setlist{topsep=4pt,itemsep=2pt,parsep=0pt,leftmargin=1.5em}
+\setlist[itemize]{label=\textendash,leftmargin=1.2em,itemsep=2pt}
+\setcounter{tocdepth}{2}
+\clubpenalty=10000\widowpenalty=10000\displaywidowpenalty=10000
+\emergencystretch=2em\Urlmuskip=0mu plus 1mu
+\lstset{basicstyle=\ttfamily\fontsize{10}{13}\selectfont,breaklines=true,columns=fullflexible,keepspaces=true,frame=single,framerule=.4pt,rulecolor=\color{gray!55},showstringspaces=false,tabsize=4}
+\newcommand{\topic}[1]{\Needspace{4\baselineskip}\subsection{#1}}
+\newcommand{\hinh}[3][0.98]{\begin{figure}[htbp]\centering\includegraphics[width=#1\linewidth]{figures/#2}\caption{#3}\end{figure}}
+\newcommand{\bang}[2]{\begin{table}[htbp]\centering\caption{#2}\input{tables/#1}\end{table}}
+\newcommand{\thanhvien}{{\fontsize{12}{17}\selectfont\begin{tabular}{lll}
+\textbf{Lý Thành Đạt} & MSSV: \textbf{23010879} & Lớp: \textbf{K17 - KHMT}\\[0.25cm]
+\textbf{Đinh Đức Mạnh} & MSSV: \textbf{23010029} & Lớp: \textbf{K17 - KHMT}\\[0.25cm]
+\textbf{Phạm Văn Đạt} & MSSV: \textbf{23017150} & Lớp: \textbf{K17 - KHMT}
+\end{tabular}}}
+\newcommand{\khungbia}{\begin{tikzpicture}[remember picture,overlay]
+\draw[line width=1pt] ([xshift=2.6cm,yshift=-2.3cm]current page.north west) rectangle ([xshift=-1.4cm,yshift=2cm]current page.south east);
+\draw[line width=.45pt] ([xshift=2.75cm,yshift=-2.45cm]current page.north west) rectangle ([xshift=-1.55cm,yshift=2.15cm]current page.south east);
+\end{tikzpicture}}
+\begin{document}\fontsize{14}{19}\selectfont
+\begin{titlepage}\thispagestyle{empty}\khungbia\begin{center}
+{\fontsize{14}{20}\selectfont BỘ GIÁO DỤC VÀ ĐÀO TẠO\\\bfseries ĐẠI HỌC PHENIKAA}\\[0.2cm]
+\rule{4.5cm}{0.4pt}\\[0.35cm]
+\includegraphics[width=3.6cm]{image/Logo.png}\\[0.55cm]
+{\fontsize{18}{24}\selectfont\bfseries BÁO CÁO BÀI TẬP LỚN}\\[0.45cm]
+{\fontsize{14}{20}\selectfont\bfseries HỌC PHẦN: THUẬT TOÁN ỨNG DỤNG\\LỚP HỌC PHẦN: N01}\\[0.65cm]
+{\fontsize{17}{23}\selectfont\bfseries TỐI ƯU HÓA SƠ TÁN TÒA NHÀ A4\\BẰNG ĐỒ THỊ ĐỘNG VÀ\\MẠNG LUỒNG THEO THỜI GIAN}\\[0.65cm]
+\thanhvien\vfill
+{\bfseries Hà Nội, tháng 10 năm 2026}
+\end{center}\end{titlepage}
+\begin{titlepage}\thispagestyle{empty}\khungbia\begin{center}
+{\fontsize{14}{20}\selectfont BỘ GIÁO DỤC VÀ ĐÀO TẠO\\\bfseries ĐẠI HỌC PHENIKAA}\\[0.2cm]
+\rule{4.5cm}{0.4pt}\\[0.3cm]
+\includegraphics[width=3.2cm]{image/Logo.png}\\[0.45cm]
+{\fontsize{18}{24}\selectfont\bfseries BÁO CÁO BÀI TẬP LỚN}\\[0.35cm]
+{\bfseries HỌC PHẦN: THUẬT TOÁN ỨNG DỤNG - N01}\\[0.6cm]
+{\fontsize{16}{22}\selectfont\bfseries TỐI ƯU HÓA SƠ TÁN TÒA NHÀ A4\\BẰNG ĐỒ THỊ ĐỘNG VÀ\\MẠNG LUỒNG THEO THỜI GIAN}\\[0.65cm]
+\thanhvien\\[0.7cm]
+{\fontsize{14}{20}\selectfont GVHD: TS. Trần Đình Tân}\vfill
+{\bfseries Hà Nội, tháng 10 năm 2026}
+\end{center}\end{titlepage}
+\pagenumbering{roman}
+\input{section/Acknowledgements}\input{section/abstract}
+\input{section/abbreviations}
+\clearpage{\fontsize{12}{16}\selectfont\setlength{\parskip}{0pt}\tableofcontents}
+\clearpage{\fontsize{11}{14}\selectfont\listoffigures}
+\clearpage{\fontsize{11}{14}\selectfont\listoftables}
+\clearpage\pagenumbering{arabic}
+\input{section/section1}\input{section/section2}\input{section/section3}
+\input{section/section4}\input{section/section5}\input{section/ref}\input{section/appendix}
+\end{document}

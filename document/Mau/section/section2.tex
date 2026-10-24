@@ -1,0 +1,116 @@
+\clearpage\section{MÔ HÌNH ĐỒ THỊ VÀ MẠNG THỜI GIAN}
+\subsection{Đồ thị không gian và ngữ nghĩa của các nút}
+Đặt $G=(V,E)$ là đồ thị có hướng. Mỗi cạnh biểu diễn một thao tác đi từ một khu vực sang khu vực tiếp theo; hướng cạnh là hướng người có thể đi trong mô hình. Mỗi khu phòng chỉ có cạnh đi ra, nên không có tuyến dùng phòng đang có người như một lối xuyên hành lang.
+
+\noindent\begin{minipage}[t]{0.45\linewidth}\input{tables/nodes}\end{minipage}\hfill
+\begin{minipage}[t]{0.53\linewidth}\input{tables/edges}\end{minipage}
+
+Đồ thị được sinh có 162 nút và 257 cạnh có hướng. ROOM là nơi xuất phát; DOOR là cửa phòng tầng trên; CORRIDOR là vị trí trên hành lang; LOBBY là sảnh tiếp cận thang; STAIR là nút trên cụm thang; EXIT là biên kết thúc sơ tán. Có 43 nút DOOR ở tầng 2--7 và bảy cửa phòng tầng 1 mang trực tiếp loại EXIT.
+
+Quy tắc biểu diễn cửa dựa trên chú giải mặt bằng: khu ghép và phòng có chiều dài từ 8 m được gán hai cửa; phòng ngắn hơn được gán một cửa. Hai cửa có tọa độ quy ước tại 20\% và 80\% chiều dài. Khoảng cách từ tâm phòng đến cửa được tính trong hệ cục bộ, biểu diễn phần di chuyển bên trong phòng trước khi tiếp cận biên cửa.
+
+Cạnh thang nối hai tầng kề theo hướng đi xuống và giữ chỉ số cụm thang. Thời lượng được tính từ quãng đường giữa tầng giả định, độc lập với tọa độ ngang cục bộ.
+
+\topic{Điều kiện thoát tại hành lang hở tầng 1}
+Điều kiện biên ở tầng 1 là hành lang hở có khả năng tiếp cận trực tiếp không gian ngoài. Với cửa phòng tầng 1 ký hiệu $D$, thời điểm thoát được xác định bởi
+\begin{equation}T_{\mathrm{exit}}=T_{\mathrm{arrival}}(D).\end{equation}
+Sự kiện thoát trùng với thời điểm đến cửa. Thời lượng tiếp cận cửa từ trong phòng và năng lực thông hành của cửa vẫn tham gia các ràng buộc; không phát sinh thao tác chuyển tiếp sau biên này.
+
+\hinh{ground_vector.pdf}{Bảy cửa phòng tầng 1 và hai vùng thoát từ sảnh thang.}
+
+Mỗi cửa phòng tầng 1 có năng lực hấp thụ bằng năng lực của chính cửa đó. Với bề rộng giả định 1,2 m, suất thông hành 1,3 người/(m.s) và bước 5 s, mỗi cửa cho vào tối đa $\lfloor1{,}2\times1{,}3\times5\rfloor=7$ người/bước. Phòng 101 có 20 người, nên có thể xuất hiện ba đoàn 7, 7 và 6 người; việc coi hành lang là vùng ngoài không làm mất hàng đợi này.
+
+Người ở tầng trên đi xuống thang, qua sảnh tầng 1 rồi tới hành lang hở. Hai nhãn EXIT1 và EXIT2 chỉ hai vùng tiếp cận đó, không phải hai cửa vật lý bổ sung. Năng lực hấp thụ tại mỗi vùng đặt bằng $N=1.360$ để không tạo thêm nút thắt; lưu lượng thực đã bị giới hạn bởi cạnh tiếp cận sảnh và thang.
+
+EXIT là nút hấp thụ, không có cạnh người đi ra hoặc hành động chờ tại đó.
+
+\topic{Rời rạc hóa thời gian và giả định năng lực}
+Mô hình dùng các mốc $t_k=k\Delta t$. Với cạnh $e$ dài $\ell_e$, tốc độ $v_e$, số bước đi là $d_e=\max(1,\lceil\ell_e/(v_e\Delta t)\rceil)$. Phép làm tròn lên giúp tránh đến sớm hơn thời lượng liên tục đã giả định, nhưng tạo sai khác tích lũy trên tuyến nhiều cạnh.
+
+\begin{table}[htbp]\centering\caption{Cấu hình tham số cơ sở và phân loại nguồn}
+\small\begin{tabularx}{\linewidth}{P{5.1cm}P{2.7cm}X}\toprule
+Tham số & Giá trị & Nguồn / loại tham số\\\midrule
+Bước thời gian & 5 s & Thiết kế rời rạc hóa.\\
+Tốc độ đi bộ / trên thang & 1,2 / 0,7 m/s & Minh họa, cần hiệu chỉnh.\\
+Quãng đường giữa hai tầng & 12 m & Giả định hình học.\\
+Suất thông hành $q$ & 1,3 người/(m.s) & Minh họa, không phải số đo A4.\\
+Bề rộng cửa phòng & 1,2 m & Giả định thông thủy.\\
+Bề rộng sử dụng vế thang & 1,5 m & Giả định, khác lõi thang 5 m.\\
+Bề rộng hành lang / làn & 2 / 1 m & Sơ đồ / quy tắc chia làn.\\
+Sức chứa nút hành lang & 24 người & Minh họa ở mức nút.\\
+Sức chứa sảnh / thang & 30 / 36 người & Minh họa ở mức nút.\\
+Lan cháy / khói ngang & 0,03 / 0,15 m/s & Độ trễ sự kiện minh họa.\\
+Khói lên / xuống một tầng & 25 / 45 s & Độ trễ sự kiện minh họa.\\\bottomrule
+\end{tabularx}\end{table}
+
+Năng lực khởi hành của cạnh có bề rộng $w_e$ là $U_e=\lfloor w_eq\Delta t\rfloor$. Hành lang 2 m được chia cố định thành hai làn 1 m, mỗi chiều một làn. Cách này tránh cấp đồng thời toàn bộ 2 m cho cả hai hướng, nhưng chưa tối ưu việc chia sẻ bề rộng linh hoạt.
+
+Sức chứa đang đi được xác lập theo mô hình đoàn, $C_e=d_eU_e$, tương ứng tối đa $d_e$ đoàn khởi hành đồng thời hiện diện trên cạnh. Cấu hình này bảo đảm ràng buộc tổng đang đi từ năng lực từng bước. Trường hợp $C_e<d_eU_e$ đòi hỏi thêm ràng buộc chiếm dụng chồng lấp và nằm ngoài miền cấu hình được bộ giải chấp nhận.
+
+\topic{Xây dựng mạng mở rộng theo thời gian}
+Với horizon $K$, mỗi trạng thái hợp lệ $(v,k)$ được tách thành hai nút $(v,k)^{\mathrm{in}}$ và $(v,k)^{\mathrm{out}}$. Cạnh nối hai nút có dung lượng $B_v$, nhờ đó mọi người hiện diện ở cùng vị trí và mốc thời gian phải cùng đi qua một giới hạn chứa.
+
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[>=Stealth,node distance=1.8cm,every node/.style={font=\small}]
+\node[draw,rounded corners] (ui) {$u_k^{\mathrm{in}}$};
+\node[draw,rounded corners,right=of ui] (uo) {$u_k^{\mathrm{out}}$};
+\node[draw,rounded corners,right=2.8cm of uo] (vi) {$v_{k+d}^{\mathrm{in}}$};
+\node[draw,rounded corners,below=1.7cm of ui] (un) {$u_{k+1}^{\mathrm{in}}$};
+\draw[->,thick] (ui)--node[above,align=center]{Tách nút\\$B_u$}(uo);
+\draw[->,thick] (uo)--node[above,align=center]{Di chuyển\\$U_e$, $d_e$ bước}(vi);
+\draw[->,thick] (uo)--node[below right,align=center]{Chờ một bước\\$B_u$}(un);
+\end{tikzpicture}
+\caption{Tách nút, cạnh di chuyển và cạnh chờ trong TEN.}\end{figure}
+
+Gọi $x_{e,k}$ là số người bắt đầu cạnh $e$ ở bước $k$, $z_{v,k}$ là số người chờ sang bước kế tiếp và $y_{v,k}$ là lượng hiện diện. Các giới hạn chính gồm
+\begin{align}0\le x_{e,k}\le U_e,\quad 0\le y_{v,k}\le B_v,\\
+\text{tổng đến tại }(v,k)=\text{tổng đi hoặc chờ từ }(v,k).
+\end{align}
+Siêu nguồn cấp dân số phòng ở bước 0; mỗi EXIT nối siêu đích tại đúng bước đến. Chỉ tạo cạnh chờ nếu vị trí cho chờ và cả hai mốc đều an toàn. Cạnh đi nối bước $k$ tới $k+d_e$, vì vậy thời gian không bị bỏ qua khi tối ưu luồng.
+
+Do mọi dung lượng nguyên, luồng có thể phân rã thành nhóm nguyên. Không cần làm tròn một nghiệm phân số sau tối ưu, nhờ đó tránh tạo thêm vi phạm năng lực do bước hậu xử lý.
+
+\topic{Lịch nguy cơ và ranh giới an toàn}
+Cháy và khói được mô hình hóa bằng các thời điểm sự kiện trên đồ thị. Một hoặc nhiều nguồn có thời điểm bắt đầu; Dijkstra đa nguồn lan truyền thời điểm sớm nhất tới các vị trí còn lại. Đồ thị nguy cơ khác đồ thị người đi: khói có thể lan lên thang, dù người trong mô hình chỉ đi xuống.
+
+Tại nút $v$, thời điểm mất an toàn là
+\begin{equation}T_v=\min(T_v^{fire},T_v^{smoke},T_v^{closure}).\end{equation}
+Điều kiện hợp lệ là $t<T_v$, không phải $t\le T_v$. Ví dụ, một vùng bị chặn ở 120 s vẫn hợp lệ tại 119,999 s nhưng không hợp lệ tại 120 s. Quy ước này được kiểm tra bằng ca thử riêng để tránh sai khác ở đúng mốc nguy hiểm.
+
+\begin{table}[htbp]\centering\caption{Ví dụ kiểm tra một cạnh có mốc đóng 120 s}
+\small\begin{tabular}{rrl}\toprule Khởi hành & Đến & Kết luận\\\midrule
+100 s & 115 s & Có thể hợp lệ nếu hai đầu an toàn.\\
+105 s & 120 s & Không hợp lệ: đến đúng mốc đóng.\\
+115 s & 130 s & Không hợp lệ: chuyến đi vượt mốc.\\\bottomrule\end{tabular}\end{table}
+
+Cạnh bị đóng bảo thủ khi một trong hai đầu không an toàn hoặc đến mốc khóa cạnh riêng. Toàn bộ chuyến đi phải kết thúc trước mốc đóng của cạnh. Do đó, chỉ kiểm tra an toàn lúc khởi hành là không đủ: người có thể đang trên đường khi khói tới.
+
+Lịch nguy cơ được xác định trước trong toàn bộ horizon. Đây là bài toán tối ưu ngoại tuyến với thông tin hoàn hảo; các tham số lan truyền biểu diễn độ trễ sự kiện trên mạng.
+
+\topic{Mục tiêu ưu tiên và tính đơn điệu theo horizon}
+Gọi $F(K)$ là max flow trên TEN đến bước $K$. Đầu tiên tính $F^*=F(K_{max})$ để xác định số người tối đa có thể sơ tán trong thời hạn. Sau đó tìm horizon nhỏ nhất vẫn sơ tán được lượng này:
+\begin{equation}K^*=\min\{K:F(K)\ge F^*\}.\end{equation}
+Ở $K^*$, bài toán luồng chi phí nhỏ nhất gửi đúng $F^*$ người, với chi phí trên cạnh thoát ở bước $k$ bằng $k$. Mục tiêu cuối là $\min\sum_{v\in EXIT,k}k f_{v,k}$.
+
+\begin{dinhly}Với lịch nguy cơ cố định và mô hình hiện tại, $F(K)$ không giảm khi tăng $K$.\end{dinhly}
+\begin{proof}
+Mọi hành động của một lịch đến hạn $K$ vẫn nằm trong hạn $K+1$ và có cùng thời điểm nguy hiểm, năng lực và thời lượng. Người đã thoát trước $K$ không phải chờ thêm. Phép cắt theo cận dưới cũng không loại trạng thái đã hợp lệ khi horizon tăng. Vì vậy lịch cũ vẫn là ứng viên của bài toán mới, nên giá trị max flow không thể nhỏ hơn.
+\end{proof}
+
+Tính đơn điệu cho phép tìm kiếm nhị phân. Nếu $F^*<N$, vẫn tìm được thời điểm thoát cuối cho lượng thoát tối đa, nhưng không gọi đó là makespan hoàn tất toàn dân số. Trường hợp này được báo là chưa hoàn tất và giữ makespan toàn dân số ở giá trị thiếu.
+
+Mục tiêu ba cấp xác định quan hệ ưu tiên từ điển giữa lượng thoát, thời hạn và tổng thời điểm thoát. Việc tối ưu tổng chi phí chỉ được thực hiện sau khi cố định hai mục tiêu trước, nên không xảy ra đánh đổi lượng người thoát để giảm tổng thời gian của một tập dân số nhỏ hơn.
+
+\topic{Ví dụ tính tay và giới hạn chứa theo đoàn}
+Xét một nguồn 10 người có hai tuyến đến vùng ngoài. Tuyến A đi mất 2 bước, cho vào tối đa 3 người/bước; tuyến B đi mất 3 bước, cho vào tối đa 2 người/bước. Bỏ qua giới hạn nút trung gian trong ví dụ để tách riêng tác động thời lượng và năng lực.
+
+\begin{table}[htbp]\centering\caption{Một lịch sơ tán đủ 10 người cho ví dụ hai tuyến}
+\small\begin{tabular}{crrrr}\toprule Bước khởi hành & Vào A & Bước đến A & Vào B & Bước đến B\\\midrule
+0 & 3 & 2 & 2 & 3\\1 & 3 & 3 & 2 & 4\\\bottomrule\end{tabular}\end{table}
+Đến hết bước 2 chỉ ba người tới đích. Đến hết bước 3 có thể đưa thêm ba người theo A và hai người từ B khởi hành ở bước 0, đạt tám người. Muốn sơ tán đủ mười trước hoặc tại bước 3 là không thể vì các suất vào còn lại chưa kịp tới đích. Lịch trên hoàn tất ở bước 4; tổng thời điểm thoát là $3\cdot2+3\cdot3+2\cdot3+2\cdot4=29$ đơn vị bước.
+
+Với cạnh A, có hai đoàn khởi hành chồng lấp, mỗi đoàn tối đa ba người. Sức chứa đang đi $C_A=2\times3=6$ là hệ quả của cách đặt năng lực. Tổng quát,
+\begin{equation}\sum_{j=k-d_e+1}^{k}x_{e,j}\le d_eU_e=C_e.\end{equation}
+Trong cấu hình đoàn, bất đẳng thức bảo đảm tổng người đang đi thông qua các giới hạn khởi hành. Nếu $C_A=4$ trong khi $U_A=3$, cận $d_AU_A=6$ không bảo đảm ràng buộc chứa 4. Trường hợp đó yêu cầu biểu diễn tài nguyên chồng lấp trong mô hình, thay vì chỉ hiệu chỉnh một thuộc tính dữ liệu.
+
+Ví dụ minh họa cơ chế ràng buộc; kết quả A4 được trình bày ở phần 5.
